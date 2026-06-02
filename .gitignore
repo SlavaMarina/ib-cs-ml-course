@@ -1,0 +1,22 @@
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Student work (опционально — если ученики форкают и не хотят коммитить данные)
+# *_solution.ipynb
+# submissions/
+
+# Colab / data artifacts
+*.csv.tmp
+.config/
+sample_data/
