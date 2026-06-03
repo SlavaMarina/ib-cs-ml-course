@@ -14,8 +14,8 @@ K-means, DBSCAN, hierarchical and spectral clustering, association rule learning
 
 | # | Notebook | Open in Colab | Description |
 |---|---|---|---|
-| 1 | **Lesson 5 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week3_unsupervised/Week3_Lesson5_Lecture.ipynb) | Clustering (4 algorithms), association rules, model selection |
-| 2 | **Lesson 6 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week3_unsupervised/Week3_Lesson6_Workshop.ipynb) | Customer segmentation (K-means + Elbow + Silhouette), DBSCAN, Apriori |
+| 1 | **Lesson 5 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week3_unsupervised/Week3_Lesson5_Lecture.ipynb) | Clustering (4 algorithms), association rules, model selection |
+| 2 | **Lesson 6 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week3_unsupervised/Week3_Lesson6_Workshop.ipynb) | Customer segmentation (K-means + Elbow + Silhouette), DBSCAN, Apriori |
 
 ## 🧠 Key terms
 

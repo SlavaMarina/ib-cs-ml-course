@@ -16,8 +16,8 @@ Feature selection, dimensionality reduction, linear regression, KNN, decision tr
 
 | # | Notebook | Open in Colab | Description |
 |---|---|---|---|
-| 1 | **Lesson 3 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week2_supervised/Week2_Lesson3_Lecture.ipynb) | Linear regression, KNN, decision trees + feature selection + metrics |
-| 2 | **Lesson 4 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week2_supervised/Week2_Lesson4_Workshop.ipynb) | KNN + DT on real data, grid search, cross-validation |
+| 1 | **Lesson 3 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week2_supervised/Week2_Lesson3_Lecture.ipynb) | Linear regression, KNN, decision trees + feature selection + metrics |
+| 2 | **Lesson 4 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week2_supervised/Week2_Lesson4_Workshop.ipynb) | KNN + DT on real data, grid search, cross-validation |
 
 ## 🧠 Key terms
 

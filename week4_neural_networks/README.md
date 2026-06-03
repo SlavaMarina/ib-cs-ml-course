@@ -13,8 +13,8 @@ ANN structure, activation functions, forward and backpropagation, gradient desce
 
 | # | Notebook | Open in Colab | Description |
 |---|---|---|---|
-| 1 | **Lesson 7 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week4_neural_networks/Week4_Lesson7_Lecture.ipynb) | ANN structure, activation functions, backpropagation, CNN architecture |
-| 2 | **Lesson 8 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week4_neural_networks/Week4_Lesson8_Workshop.ipynb) | Brain in Code: NumPy ANN + Keras CNN on MNIST |
+| 1 | **Lesson 7 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week4_neural_networks/Week4_Lesson7_Lecture.ipynb) | ANN structure, activation functions, backpropagation, CNN architecture |
+| 2 | **Lesson 8 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week4_neural_networks/Week4_Lesson8_Workshop.ipynb) | Brain in Code: NumPy ANN + Keras CNN on MNIST |
 
 ## 🧠 Key terms
 

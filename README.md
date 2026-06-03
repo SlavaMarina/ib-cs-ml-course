@@ -62,8 +62,8 @@ All notebooks run in **Google Colab** (one click, nothing to install) or locally
 
 | Notebook | Open | Description |
 |---|---|---|
-| **Lesson 1 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week1_fundamentals/Week1_Lesson1_Lecture.ipynb) | Types of ML + Hardware: 6 processor types, edge vs cloud, 5 application scenarios |
-| **Lesson 2 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week1_fundamentals/Week1_Lesson2_Workshop.ipynb) | Full data cleaning pipeline on two real datasets |
+| **Lesson 1 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_Lesson1_Lecture.ipynb) | Types of ML + Hardware: 6 processor types, edge vs cloud, 5 application scenarios |
+| **Lesson 2 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_Lesson2_Workshop.ipynb) | Full data cleaning pipeline on two real datasets |
 
 ### Week 2: [Supervised Learning + Metrics](./week2_supervised/)
 
@@ -71,8 +71,8 @@ All notebooks run in **Google Colab** (one click, nothing to install) or locally
 
 | Notebook | Open | Description |
 |---|---|---|
-| **Lesson 3 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week2_supervised/Week2_Lesson3_Lecture.ipynb) | Linear regression, KNN, decision trees + feature selection + metrics |
-| **Lesson 4 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week2_supervised/Week2_Lesson4_Workshop.ipynb) | KNN + DT on real data, grid search, cross-validation |
+| **Lesson 3 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week2_supervised/Week2_Lesson3_Lecture.ipynb) | Linear regression, KNN, decision trees + feature selection + metrics |
+| **Lesson 4 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week2_supervised/Week2_Lesson4_Workshop.ipynb) | KNN + DT on real data, grid search, cross-validation |
 
 ### Week 3: [Unsupervised Learning + Model Selection](./week3_unsupervised/)
 
@@ -80,8 +80,8 @@ All notebooks run in **Google Colab** (one click, nothing to install) or locally
 
 | Notebook | Open | Description |
 |---|---|---|
-| **Lesson 5 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week3_unsupervised/Week3_Lesson5_Lecture.ipynb) | Clustering (4 algorithms), association rules, model selection |
-| **Lesson 6 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week3_unsupervised/Week3_Lesson6_Workshop.ipynb) | Customer segmentation (K-means + Elbow + Silhouette), DBSCAN, Apriori |
+| **Lesson 5 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week3_unsupervised/Week3_Lesson5_Lecture.ipynb) | Clustering (4 algorithms), association rules, model selection |
+| **Lesson 6 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week3_unsupervised/Week3_Lesson6_Workshop.ipynb) | Customer segmentation (K-means + Elbow + Silhouette), DBSCAN, Apriori |
 
 ### Week 4: [Neural Networks - ANN, CNN, Backpropagation](./week4_neural_networks/)
 
@@ -89,8 +89,8 @@ All notebooks run in **Google Colab** (one click, nothing to install) or locally
 
 | Notebook | Open | Description |
 |---|---|---|
-| **Lesson 7 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week4_neural_networks/Week4_Lesson7_Lecture.ipynb) | ANN structure, activation functions, backpropagation, CNN architecture |
-| **Lesson 8 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week4_neural_networks/Week4_Lesson8_Workshop.ipynb) | Brain in Code: NumPy ANN + Keras CNN on MNIST |
+| **Lesson 7 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week4_neural_networks/Week4_Lesson7_Lecture.ipynb) | ANN structure, activation functions, backpropagation, CNN architecture |
+| **Lesson 8 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week4_neural_networks/Week4_Lesson8_Workshop.ipynb) | Brain in Code: NumPy ANN + Keras CNN on MNIST |
 
 ### Week 5: [Reinforcement Learning, Genetic Algorithms & Ethics](./week5_rl_ga_ethics/)
 
@@ -98,8 +98,8 @@ All notebooks run in **Google Colab** (one click, nothing to install) or locally
 
 | Notebook | Open | Description |
 |---|---|---|
-| **Lesson 9 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week5_rl_ga_ethics/Week5_Lesson9_Lecture.ipynb) | RL + GA + Ethics (8 issue types, 6 case studies) |
-| **Lesson 10 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week5_rl_ga_ethics/Week5_Lesson10_Workshop.ipynb) | Mock exam practice + N-Queens GA + Q-learning GridWorld |
+| **Lesson 9 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week5_rl_ga_ethics/Week5_Lesson9_Lecture.ipynb) | RL + GA + Ethics (8 issue types, 6 case studies) |
+| **Lesson 10 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week5_rl_ga_ethics/Week5_Lesson10_Workshop.ipynb) | Mock exam practice + N-Queens GA + Q-learning GridWorld |
 
 ### Week 6: [Final Mile - LLMs, Self-Assessment & Exam Prep](./week6_final_mile/)
 
@@ -107,16 +107,16 @@ All notebooks run in **Google Colab** (one click, nothing to install) or locally
 
 | Notebook | Open | Description |
 |---|---|---|
-| **Lesson 11 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week6_final_mile/Week6_Lesson11_Lecture_LLM.ipynb) | LLMs / Generative AI + TOK integration + GDPR / AI Act |
-| **Quiz - Self-Assessment** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week6_final_mile/Week6_Quiz_Battery.ipynb) | 50 multiple-choice questions with auto-grading (exam-style practice) |
-| **Flashcards - Revision** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week6_final_mile/Week6_Flashcards.ipynb) | 108 interactive flashcards + day-before-exam checklist |
+| **Lesson 11 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week6_final_mile/Week6_Lesson11_Lecture_LLM.ipynb) | LLMs / Generative AI + TOK integration + GDPR / AI Act |
+| **Quiz - Self-Assessment** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week6_final_mile/Week6_Quiz_Battery.ipynb) | 50 multiple-choice questions with auto-grading (exam-style practice) |
+| **Flashcards - Revision** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week6_final_mile/Week6_Flashcards.ipynb) | 108 interactive flashcards + day-before-exam checklist |
 
 ### 🎁 [Bonus - Kaggle Competition + Class Debate Kit](./bonus/)
 
 | Notebook | Open | Description |
 |---|---|---|
-| **Kaggle Quest** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/bonus/Bonus_Kaggle_Competition_Journey.ipynb) | 6-week gamified track: from first submission to class leaderboard |
-| **Debate Kit** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/bonus/Bonus_Class_Debate_Kit.ipynb) | 8 ready-to-run debates with arguments, real cases, scoring rubric |
+| **Kaggle Quest** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/bonus/Bonus_Kaggle_Competition_Journey.ipynb) | 6-week gamified track: from first submission to class leaderboard |
+| **Debate Kit** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/bonus/Bonus_Class_Debate_Kit.ipynb) | 8 ready-to-run debates with arguments, real cases, scoring rubric |
 
 ## 🛠 Requirements
 

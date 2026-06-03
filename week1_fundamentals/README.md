@@ -14,8 +14,8 @@ Types of ML (supervised / unsupervised / reinforcement / deep / transfer learnin
 
 | # | Notebook | Open in Colab | Description |
 |---|---|---|---|
-| 1 | **Lesson 1 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week1_fundamentals/Week1_Lesson1_Lecture.ipynb) | Types of ML + Hardware: 6 processor types, edge vs cloud, 5 application scenarios |
-| 2 | **Lesson 2 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week1_fundamentals/Week1_Lesson2_Workshop.ipynb) | Full data cleaning pipeline on two real datasets |
+| 1 | **Lesson 1 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_Lesson1_Lecture.ipynb) | Types of ML + Hardware: 6 processor types, edge vs cloud, 5 application scenarios |
+| 2 | **Lesson 2 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_Lesson2_Workshop.ipynb) | Full data cleaning pipeline on two real datasets |
 
 ## 🧠 Key terms
 
