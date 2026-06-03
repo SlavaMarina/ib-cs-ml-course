@@ -1,19 +1,19 @@
-# 📚 Resources — справочные материалы
+# 📚 Resources
 
-Дополнительные файлы для самостоятельной подготовки. Эти ресурсы **не нужно** прорабатывать линейно — обращайтесь по необходимости.
+Reference materials for self-study. You don't need to work through these linearly — use them as needed.
 
-## 📖 Что внутри
+## 📖 What's inside
 
-| Файл | Назначение | Когда использовать |
+| File | Purpose | When to use |
 |---|---|---|
-| **[glossary.md](./glossary.md)** | 116 ключевых терминов с определениями, примерами, common mistakes | повторение перед экзаменом, быстрая справка во время ДЗ |
-| **[HW_SUBMISSION.md](./HW_SUBMISSION.md)** | Comprehensive гайд для учеников: workflow, AI policy, чеклист | **прочитайте ПЕРВЫМ** перед первым ДЗ |
+| **[glossary.md](./glossary.md)** | 116 key terms with definitions, examples, common mistakes | revision before exams, quick reference during work |
+| **[HW_SUBMISSION.md](./HW_SUBMISSION.md)** | Comprehensive student guide: workflow, AI policy, checklist | **read this FIRST** before your first homework |
 
 ## 💡 Tips
 
-- **Глоссарий** имеет два индекса: алфавитный и по неделям. Используйте поиск (Ctrl+F).
-- **HW Submission** содержит pre-submission checklist — распечатайте или сохраните.
+- The **glossary** has two indexes: alphabetical and by week. Use Ctrl+F to search.
+- **HW Submission** contains a pre-submission checklist — print it or save it.
 
 ---
 
-[⬅ Назад на главную](../README.md)
+[⬅ Back to home](../README.md)

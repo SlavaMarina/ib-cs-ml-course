@@ -1,170 +1,124 @@
-# 📤 HW Submission Guide — гайд для учеников
+# 📤 Homework Submission Guide — for students
 
-> **Comprehensive** инструкция по сдаче домашних работ.
-> Прочитайте **ПЕРВЫМ ДЕЛОМ** перед первым ДЗ. Сэкономит часы.
-
----
-
-## 📋 TL;DR — главные правила
-
-1. ✅ **Делайте копию** ноутбука себе (Drive или Fork)
-2. ✅ **Запустите все ячейки** перед сдачей (`Runtime → Run all`)
-3. ✅ **Декларируйте AI usage** (см. секцию ниже)
-4. ✅ **Сдавайте до дедлайна** (опоздание -10%/день, после 7 дней — Missing)
-5. ✅ **Используйте чеклист** в конце этого документа перед каждой сдачей
+> **Read this FIRST** before your first homework. It will save you hours.
 
 ---
 
-## 🎯 Что от вас хочет учитель
+## 📋 TL;DR — the key rules
 
-Каждое ДЗ оценивается по **трём осям**:
+1. ✅ **Make your own copy** of the notebook (Drive or Fork)
+2. ✅ **Run all cells** before submitting (`Runtime → Run all`)
+3. ✅ **Declare any AI use** (see section below)
+4. ✅ **Submit before the deadline** (late = -10%/day; after 7 days = Missing)
+5. ✅ **Use the checklist** at the end of this document before every submission
 
-| Ось | Критерий | Вес |
+---
+
+## 🎯 What your teacher is looking for
+
+Every homework is graded along **three axes**:
+
+| Axis | Criterion | Weight |
 |---|---|---|
-| **Correctness** | правильные ответы / работающий код | ~60% |
-| **IB style** | правильные command terms, structure, term usage | ~25% |
-| **Effort** | заполненные cells, попытки сложных заданий, reflections | ~15% |
+| **Correctness** | correct answers / working code | ~60% |
+| **IB style** | correct command terms, structure, terminology | ~25% |
+| **Effort** | filled-in cells, attempts at hard tasks, reflections | ~15% |
 
-> 💎 **Низко-висящие фрукты:** заполняйте ВСЕ блоки. Пустой блок = 0 баллов; хоть какая попытка = частичный балл.
+> 💎 **Low-hanging fruit:** fill in EVERY block. An empty block = 0 marks; any attempt = partial credit.
 
 ---
 
-## 🟢 Способ A — Google Classroom (рекомендуется по умолчанию)
+## 🟢 Submitting via Google Classroom
 
-### Setup один раз
-1. Получите ссылку на репозиторий от учителя
-2. Откройте в Google Classroom задание
+### One-time setup
+1. Get the repository link from your teacher
+2. Open the assignment in Google Classroom
 
-### Для каждого ДЗ:
-1. **Откройте notebook в Colab** через кнопку "Open in Colab" на странице недели
-2. **Сразу сохраните копию:**
+### For each homework:
+1. **Open the notebook in Colab** via the homework attachment in Classroom
+2. **Save a copy immediately:**
    ```
    File → Save a copy in Drive
    ```
-   > ⚠️ **БЕЗ ЭТОГО ПРОГРЕСС НЕ СОХРАНИТСЯ!** Это самая частая ошибка.
-3. **Переименуйте копию:** `[ВашаФамилия]_[НоутбукНаз].ipynb`
-   - Пример: `Иванов_Week1_HW1_Theory.ipynb`
-4. **Работайте в своей копии**. Заполняйте:
-   - 🟠 Ячейки с пометкой `# === ВАШ КОД ===`
-   - 🔵 Markdown блоки с вопросами (пишите ответы прямо под вопросами)
-5. **Когда закончили:** `Runtime → Run all` — убедитесь, что все ячейки выполнились без ошибок
-6. **Скачайте:** `File → Download → .ipynb`
-7. **Загрузите** в Google Classroom как ответ на задание
-8. **Нажмите "Сдать"** (или "Hand in")
-
----
-
-## 🔵 Способ B — GitHub (для продвинутых)
-
-> 💡 Используйте только если учитель явно сказал. По умолчанию — Способ A.
-
-### Setup один раз
-```bash
-# 1. Fork репозиторий курса на GitHub.com (кнопка Fork справа вверху)
-
-# 2. Clone к себе
-git clone https://github.com/ВАШ_USERNAME/ib-cs-ml-course.git
-cd ib-cs-ml-course
-
-# 3. Добавьте upstream (для обновлений от учителя)
-git remote add upstream https://github.com/УЧИТЕЛЬ_USERNAME/ib-cs-ml-course.git
-```
-
-### Для каждого ДЗ:
-```bash
-# 1. Подтяните последнюю версию от учителя
-git fetch upstream
-git checkout main
-git merge upstream/main
-
-# 2. Создайте branch для этого ДЗ
-git checkout -b hw-week1-theory
-
-# 3. Откройте ноутбук в Colab (через GitHub badge)
-#    ИЛИ работайте локально с Jupyter
-
-# 4. После работы — commit
-git add week1_fundamentals/Week1_HW1_Theory.ipynb
-git commit -m "Submit HW1 Week 1 - Theory by [ВашеИмя]"
-
-# 5. Push в свой fork
-git push origin hw-week1-theory
-
-# 6. На GitHub.com создайте Pull Request
-#    из своего fork → в репозиторий учителя
-```
-
-Учитель ревьюит PR с комментариями прямо в коде → даёт оценку → объединяет PR.
+   > ⚠️ **WITHOUT THIS, YOUR PROGRESS IS NOT SAVED!** This is the most common mistake.
+3. **Rename your copy:** `[YourSurname]_[NotebookName].ipynb`
+4. **Work in your copy.** Fill in:
+   - 🟠 Cells marked `# === YOUR CODE ===`
+   - 🔵 Markdown blocks with questions (write answers right under the question)
+5. **When done:** `Runtime → Run all` — make sure every cell runs without errors
+6. **Download:** `File → Download → .ipynb`
+7. **Upload** to Google Classroom as your assignment response
+8. **Click "Hand in"**
 
 ---
 
 ## 🤖 AI Usage Policy
 
-### ✅ РАЗРЕШЕНО
+### ✅ ALLOWED
 
-| Что | Пример |
+| What | Example |
 |---|---|
-| Спрашивать AI про концепты | "Объясни мне gradient descent на простом примере" |
-| Отладка вашего кода | "Почему этот код выдаёт IndexError?" + код |
-| Объяснение **ПОСЛЕ** вашей попытки | "Я попробовал X, получилось Y. Где ошибка?" |
-| Перевод/исправление грамматики в ответах | для не-носителей английского |
+| Asking AI about concepts | "Explain gradient descent with a simple example" |
+| Debugging your own code | "Why does this code raise an IndexError?" + code |
+| Explanation **after** your own attempt | "I tried X, got Y. Where's the mistake?" |
+| Translation / grammar fixes in your answers | for non-native English speakers |
 
-### ❌ ЗАПРЕЩЕНО (плагиат)
+### ❌ NOT ALLOWED (plagiarism)
 
-| Что | Почему |
+| What | Why |
 |---|---|
-| Просить AI **написать ДЗ целиком** | это и есть academic dishonesty |
-| Копировать AI-ответы без понимания | IB plagiarism policy |
-| Использовать AI на **экзаменах и mock** | строго запрещено |
-| Не задекларировать использование AI | штраф -20% от оценки |
+| Asking AI to **write the whole homework** | this is academic dishonesty |
+| Copying AI answers without understanding | IB plagiarism policy |
+| Using AI during **exams or mocks** | strictly forbidden |
+| Not declaring AI use | -20% penalty |
 
-### Обязательная декларация AI Usage
+### Required AI Usage Declaration
 
-В **КОНЦЕ КАЖДОГО** сданного HW добавьте такую markdown-ячейку:
+Add this markdown cell at the **END of EVERY** submitted homework:
 
 ```markdown
 ## 🤖 AI Usage Declaration
 
-- [ ] Не использовал AI ассистентов
-- [x] Использовал AI для отладки кода (ячейки X, Y)
-- [ ] Использовал AI для объяснения концепции **после** самостоятельной попытки
+- [ ] I did not use any AI assistants
+- [x] I used AI for code debugging (cells X, Y)
+- [ ] I used AI to explain a concept **after** my own attempt
 
-**Какие AI использовал:** ChatGPT 4 / Claude / Copilot / другое: ____
+**AI tools used:** ChatGPT 4 / Claude / Copilot / other: ____
 
-**Что конкретно спрашивал:**
-- "Почему мой код возвращает NaN?" — для cell 12
-- "Объясни KNN simpler" — для понимания теории
+**What exactly I asked:**
+- "Why does my code return NaN?" — for cell 12
+- "Explain KNN more simply" — to understand the theory
 ```
 
-> ⚠️ **Не задекларировал = автоматический штраф -20%**, даже если AI не использовал.
-> Декларация с галочкой "не использовал" — обязательна.
+> ⚠️ **No declaration = automatic -20% penalty**, even if you didn't use AI.
+> A declaration with "did not use" ticked is mandatory.
 
 ---
 
-## ⏰ Дедлайны и опоздания
+## ⏰ Deadlines and late penalties
 
-| Опоздание | Штраф |
+| Lateness | Penalty |
 |---|---|
-| < 24 часа | **-10%** от итоговой оценки |
-| 1-2 дня | **-25%** |
-| 3-7 дней | **-50%** |
-| > 7 дней | **0%** (Missing) |
+| < 24 hours | **-10%** of the final grade |
+| 1-2 days | **-25%** |
+| 3-7 days | **-50%** |
+| > 7 days | **0%** (Missing) |
 
-### Уважительные причины (без штрафа)
-- Болезнь с медицинской справкой (показать учителю в Notion HW Tracker → AI Declared notes)
-- Технические проблемы школьной инфраструктуры
-- Семейные обстоятельства (notify учителя ЗАРАНЕЕ)
+### Valid reasons (no penalty)
+- Illness with a medical note
+- School infrastructure failures
+- Family circumstances (notify the teacher IN ADVANCE)
 
-### Не уважительные причины
-- "Забыл" / "не успел"
-- "Не работал Wi-Fi дома" (есть мобильный hotspot)
-- "Не понял задание" (нужно спросить ЗАРАНЕЕ, а не после дедлайна)
+### Invalid reasons
+- "Forgot" / "ran out of time"
+- "Home Wi-Fi was down" (use a mobile hotspot)
+- "Didn't understand the task" (ask IN ADVANCE, not after the deadline)
 
 ---
 
-## 🎨 Format & Style — что ценит учитель
+## 🎨 Format & Style — what your teacher values
 
-### Хорошо отформатированный ответ
+### Well-formatted answer
 
 ```markdown
 **Q3 (a):** Calculate Precision.
@@ -174,81 +128,80 @@ git push origin hw-week1-theory
 Precision = TP / (TP + FP)
          = 80 / (80 + 10)
          = 80 / 90
-         = 0.889 (или 88.9%)
+         = 0.889 (or 88.9%)
 
-This means that out of all predictions classified as positive, 
+This means that out of all predictions classified as positive,
 88.9% were actually correct.
 ```
 
-✅ Формула, значения, расчёт, **интерпретация**.
+✅ Formula, values, calculation, **interpretation**.
 
-### Плохо отформатированный ответ
+### Poorly-formatted answer
 
 ```
 0.889
 ```
 
-❌ Просто число. Без формулы и интерпретации — 0-1 балла из 3.
+❌ Just a number. No formula, no interpretation — 0-1 marks out of 3.
 
 ---
 
 ## ✅ Pre-Submission Checklist
 
-> Распечатайте или сохраните. Проверяйте **перед каждой сдачей**.
+> Save or print this. Check it **before every submission**.
 
-### Технический чек
-- [ ] Файл переименован: `[Фамилия]_[название].ipynb`
-- [ ] `Runtime → Run all` выполнился **без ошибок**
-- [ ] Все графики/визуализации **отображаются**
-- [ ] Никаких `# TODO` или незаполненных `[Ваш ответ]`
-- [ ] Файл сохранён локально (`.ipynb` скачан)
+### Technical
+- [ ] File renamed: `[Surname]_[name].ipynb`
+- [ ] `Runtime → Run all` completed **without errors**
+- [ ] All charts / visualizations **display**
+- [ ] No `# TODO` or unfilled `[Your answer]` left
+- [ ] File saved locally (`.ipynb` downloaded)
 
-### Контентный чек
-- [ ] Заполнены **ВСЕ** ячейки с вопросами (даже если не уверены)
-- [ ] Использованы **IB command terms** правильно (Discuss = arg+counter+conclusion)
-- [ ] Расчёты показаны с **формулами + значениями + результатом**
-- [ ] В ethics — упомянуты **конкретные case studies** (COMPAS, Amazon AI, и т.д.)
-- [ ] В extended responses — добавлен **conclusion**
+### Content
+- [ ] **ALL** question cells filled in (even if unsure)
+- [ ] **IB command terms** used correctly (Discuss = argument + counter + conclusion)
+- [ ] Calculations shown with **formula + values + result**
+- [ ] In ethics — **specific case studies** mentioned (COMPAS, Amazon AI, etc.)
+- [ ] In extended responses — a **conclusion** added
 
-### Этический чек
-- [ ] Добавлена **AI Usage Declaration** в конце
-- [ ] Все источники указаны (если использовали)
-- [ ] Файл — **ваша работа**, не копия одноклассника
-
----
-
-## 🔄 Что делать, если...
-
-### "Я случайно удалил свою копию"
-- Чек Google Drive → Trash (есть 30 дней)
-- В Colab: `File → Revision history` — есть автосохранения
-
-### "Код упал, не могу разобраться"
-1. Прочитайте error message **до конца** (ответ часто в последней строке)
-2. Загуглите exact error message
-3. Спросите AI с **полным контекстом** (код + error)
-4. Спросите учителя в Notion / Classroom комментариях
-
-### "Не понимаю задание"
-- Прочитайте **второй раз** медленно
-- Посмотрите подсказки (💎 **СЕКРЕТ** блоки в ноутбуке)
-- Спросите учителя **ЗАРАНЕЕ**, не за час до дедлайна
-
-### "Сдал, но потом нашёл ошибку"
-- Способ A: загрузите исправленную версию (Classroom примет последнюю)
-- Способ B: push новый commit, PR обновится автоматически
-- Сделайте до дедлайна!
+### Ethics
+- [ ] **AI Usage Declaration** added at the end
+- [ ] All sources cited (if used)
+- [ ] The work is **yours**, not a copy of a classmate's
 
 ---
 
-## 🎯 Финальный совет
+## 🔄 What to do if...
 
-> 💎 **Самое важное правило ML-курса:**
+### "I accidentally deleted my copy"
+- Check Google Drive → Trash (kept for 30 days)
+- In Colab: `File → Revision history` — auto-saves exist
+
+### "My code crashed and I can't figure it out"
+1. Read the error message **to the end** (the answer is often in the last line)
+2. Google the exact error message
+3. Ask AI with **full context** (code + error)
+4. Ask your teacher in Classroom comments
+
+### "I don't understand the task"
+- Read it **again** slowly
+- Check the hints (💎 **TIP** blocks in the notebook)
+- Ask your teacher **IN ADVANCE**, not an hour before the deadline
+
+### "I submitted but then found a mistake"
+- Upload the corrected version (Classroom accepts the latest)
+- Do it before the deadline!
+
+---
+
+## 🎯 Final advice
+
+> 💎 **The most important rule of the ML course:**
 >
-> **Не идеальный код > идеального плана, который никогда не написан.**
+> **Imperfect code that exists > a perfect plan that's never written.**
 >
-> Сдавайте **работающее (даже несовершенное)** решение в срок — лучше, чем идеальное, но опоздавшее.
+> Submit a **working (even imperfect)** solution on time — it beats a perfect but late one.
 
 ---
 
-[⬅ Назад в Resources](./README.md) · [⬅ В корень репозитория](../README.md)
+[⬅ Back to Resources](./README.md) · [⬅ Repository root](../README.md)

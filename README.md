@@ -1,41 +1,40 @@
 # 🎓 IB Computer Science — Machine Learning Course
 
-> Полный 6-недельный курс подготовки к **ML-части IB Computer Science** (Topic A4, first exams 2027). HL focus. 26 интерактивных Jupyter-ноутбуков.
+> A complete 6-week course preparing students for the **Machine Learning part of IB Computer Science** (Topic A4, first exams 2027). HL focus. Interactive Jupyter notebooks that run in Google Colab.
 
-![Notebooks](https://img.shields.io/badge/notebooks-26-blue) ![Syllabus](https://img.shields.io/badge/A4_coverage-17%2F17-success) ![Level](https://img.shields.io/badge/level-HL-orange) ![Exams](https://img.shields.io/badge/first_exams-2027-informational)
+![Level](https://img.shields.io/badge/level-HL-orange) ![Syllabus](https://img.shields.io/badge/A4_coverage-17%2F17-success) ![Exams](https://img.shields.io/badge/first_exams-2027-informational)
 
 ---
 
-## 📖 О курсе
+## 📖 About this course
 
-Этот курс покрывает **все 17 syllabus statements** из Topic A4 (Machine Learning) нового IB CS syllabus. Каждая неделя построена по схеме: **Лекция → Теоретическое ДЗ → Семинар (практика) → Практическое ДЗ**.
+This repository covers **all 17 syllabus statements** of Topic A4 (Machine Learning) in the new IB CS syllabus. Each week follows the pattern: **Lecture → Workshop (hands-on practice)**.
 
-Все ноутбуки запускаются в **Google Colab** (одна кнопка, ничего ставить не надо) или локально в Jupyter.
+All notebooks run in **Google Colab** (one click, nothing to install) or locally in Jupyter.
 
-## 🚀 Как начать
+> 📝 **Homework** is distributed separately via Google Classroom and is not part of this public repository.
 
-1. Нажмите бейдж **Open in Colab** рядом с любым ноутбуком ниже
-2. В Colab: `Файл → Сохранить копию на Диске` (чтобы сохранять свой прогресс)
-3. Запускайте ячейки сверху вниз (`Shift+Enter`)
-4. Для ДЗ — заполняйте ячейки с пометкой `# === ВАШ КОД ===` или текстовые блоки
+## 🚀 Getting started
 
-> 💡 **Ученикам:** делайте копию ноутбука себе на Drive перед началом работы — иначе прогресс не сохранится.
+1. Click the **Open in Colab** badge next to any notebook below.
+2. In Colab: `File → Save a copy in Drive` (to keep your progress).
+3. Run cells top to bottom (`Shift+Enter`).
 
-## 📅 Календарь курса
+## 📅 Course calendar
 
-| Неделя | Тема | Покрытие |
+| Week | Topic | Coverage |
 |---|---|---|
-| **1** | Основы + Hardware + Data Cleaning | 3 statements |
-| **2** | Supervised Learning + метрики | 5 statements |
+| **1** | Fundamentals + Hardware + Data Cleaning | 3 statements |
+| **2** | Supervised Learning + Metrics | 5 statements |
 | **3** | Unsupervised + Model Selection | 3 statements |
 | **4** | Neural Networks (ANN + CNN) | 2 statements |
-| **5** | RL + GA + Ethics + Mock | 4 statements |
-| **6** | Final Mile (LLM, Mock Paper, Flashcards) | exam prep |
-| 🎁 Bonus | Kaggle Competition + Debate Kit | дополнительно |
+| **5** | RL + GA + Ethics | 4 statements |
+| **6** | Final Mile (LLMs, Quiz, Flashcards) | exam prep |
+| 🎁 Bonus | Kaggle Competition + Debate Kit | extra |
 
-## ✅ Покрытие syllabus (17/17)
+## ✅ Syllabus coverage (17/17)
 
-| Statement | Тема | Неделя |
+| Statement | Topic | Week |
 |---|---|---|
 | `A4.1.1` | Describe types of ML and real-world applications | 1 |
 | `A4.1.2` | Describe hardware used in ML (CPU/GPU/TPU/etc.) | 1 |
@@ -43,7 +42,7 @@
 | `A4.2.2` | Feature selection (HL) | 2 |
 | `A4.2.3` | Dimensionality reduction (HL) | 2 |
 | `A4.3.1` | Linear regression | 2 |
-| `A4.3.2` | Classification (KNN, Decision Trees) | 2 |
+| `A4.3.2` | Classification (KNN, decision trees) | 2 |
 | `A4.3.3` | Hyperparameter tuning + evaluation metrics | 2 |
 | `A4.3.4` | Clustering algorithms | 3 |
 | `A4.3.5` | Association rule learning | 3 |
@@ -53,153 +52,82 @@
 | `A4.3.9` | Convolutional Neural Networks (CNN) | 4 |
 | `A4.3.10` | Model selection | 3 |
 | `A4.4.1` | Ethical implications of ML | 5 |
-| `A4.4.2` | Reassessing ethics as tech evolves | 5 |
+| `A4.4.2` | Reassessing ethics as technology evolves | 5 |
 
-## 📚 Содержание
+## 📚 Contents
 
-### Неделя 1: [Основы ML, Hardware и очистка данных](./week1_fundamentals/)
+### Week 1: [ML Fundamentals, Hardware & Data Cleaning](./week1_fundamentals/)
 
 *Syllabus: `A4.1.1`, `A4.1.2`, `A4.2.1`*
 
-| Ноутбук | Открыть | Описание |
+| Notebook | Open | Description |
 |---|---|---|
-| **Урок 1 · Лекция** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_Lesson1_Lecture.ipynb) | Типы ML + Hardware: 6 типов процессоров, edge vs cloud, 5 сценариев применения |
-| **ДЗ 1 · Теория** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_HW1_Theory.ipynb) | Сопоставление парадигм ML, выбор hardware, worked example |
-| **Урок 2 · Семинар** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_Lesson2_Workshop.ipynb) | Полный pipeline очистки данных на 2 реальных датасетах |
-| **ДЗ 2 · Практика** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_HW2_Practice.ipynb) | Самостоятельная очистка грязного датасета + отчёт |
+| **Lesson 1 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week1_fundamentals/Week1_Lesson1_Lecture.ipynb) | Types of ML + Hardware: 6 processor types, edge vs cloud, 5 application scenarios |
+| **Lesson 2 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week1_fundamentals/Week1_Lesson2_Workshop.ipynb) | Full data cleaning pipeline on two real datasets |
 
-### Неделя 2: [Supervised Learning + метрики](./week2_supervised/)
+### Week 2: [Supervised Learning + Metrics](./week2_supervised/)
 
 *Syllabus: `A4.2.2`, `A4.2.3`, `A4.3.1`, `A4.3.2`, `A4.3.3`*
 
-| Ноутбук | Открыть | Описание |
+| Notebook | Open | Description |
 |---|---|---|
-| **Урок 3 · Лекция** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week2_supervised/Week2_Lesson3_Lecture.ipynb) | Linear regression, KNN, Decision Trees + feature selection + метрики |
-| **ДЗ 1 · Теория** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week2_supervised/Week2_HW1_Theory.ipynb) | Расчёт метрик вручную, confusion matrix, выбор алгоритма |
-| **Урок 4 · Семинар** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week2_supervised/Week2_Lesson4_Workshop.ipynb) | KNN + DT на реальных данных, grid search, cross-validation |
-| **ДЗ 2 · Практика** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week2_supervised/Week2_HW2_Practice.ipynb) | Полный supervised pipeline с тюнингом гиперпараметров |
+| **Lesson 3 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week2_supervised/Week2_Lesson3_Lecture.ipynb) | Linear regression, KNN, decision trees + feature selection + metrics |
+| **Lesson 4 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week2_supervised/Week2_Lesson4_Workshop.ipynb) | KNN + DT on real data, grid search, cross-validation |
 
-### Неделя 3: [Unsupervised Learning + выбор модели](./week3_unsupervised/)
+### Week 3: [Unsupervised Learning + Model Selection](./week3_unsupervised/)
 
 *Syllabus: `A4.3.4`, `A4.3.5`, `A4.3.10`*
 
-| Ноутбук | Открыть | Описание |
+| Notebook | Open | Description |
 |---|---|---|
-| **Урок 5 · Лекция** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week3_unsupervised/Week3_Lesson5_Lecture.ipynb) | Clustering (4 алгоритма), association rules, model selection |
-| **ДЗ 1 · Теория** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week3_unsupervised/Week3_HW1_Theory.ipynb) | Ручной расчёт support/confidence/lift, выбор алгоритма кластеризации |
-| **Урок 6 · Семинар** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week3_unsupervised/Week3_Lesson6_Workshop.ipynb) | Customer segmentation (K-means+Elbow+Silhouette), DBSCAN, Apriori |
-| **ДЗ 2 · Практика** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week3_unsupervised/Week3_HW2_Practice.ipynb) | Mini-IA: retail analytics (clustering + правила + churn) |
+| **Lesson 5 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week3_unsupervised/Week3_Lesson5_Lecture.ipynb) | Clustering (4 algorithms), association rules, model selection |
+| **Lesson 6 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week3_unsupervised/Week3_Lesson6_Workshop.ipynb) | Customer segmentation (K-means + Elbow + Silhouette), DBSCAN, Apriori |
 
-### Неделя 4: [Нейронные сети — ANN, CNN, Backpropagation](./week4_neural_networks/)
+### Week 4: [Neural Networks - ANN, CNN, Backpropagation](./week4_neural_networks/)
 
 *Syllabus: `A4.3.8`, `A4.3.9`*
 
-| Ноутбук | Открыть | Описание |
+| Notebook | Open | Description |
 |---|---|---|
-| **Урок 7 · Лекция** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week4_neural_networks/Week4_Lesson7_Lecture.ipynb) | ANN структура, activation functions, backprop, CNN архитектура |
-| **ДЗ 1 · Теория** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week4_neural_networks/Week4_HW1_Theory.ipynb) | Forward pass вручную, ReLU vs Sigmoid, CNN spatial hierarchies |
-| **Урок 8 · Семинар** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week4_neural_networks/Week4_Lesson8_Workshop.ipynb) | Brain in Code: NumPy ANN + Keras CNN на MNIST |
-| **ДЗ 2 · Практика** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week4_neural_networks/Week4_HW2_Practice.ipynb) | Architecture Lab: эксперименты с глубиной + ReLU vs Sigmoid |
+| **Lesson 7 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week4_neural_networks/Week4_Lesson7_Lecture.ipynb) | ANN structure, activation functions, backpropagation, CNN architecture |
+| **Lesson 8 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week4_neural_networks/Week4_Lesson8_Workshop.ipynb) | Brain in Code: NumPy ANN + Keras CNN on MNIST |
 
-### Неделя 5: [RL, Генетические алгоритмы, Этика, Mock Exam](./week5_rl_ga_ethics/)
+### Week 5: [Reinforcement Learning, Genetic Algorithms & Ethics](./week5_rl_ga_ethics/)
 
 *Syllabus: `A4.3.6`, `A4.3.7`, `A4.4.1`, `A4.4.2`*
 
-| Ноутбук | Открыть | Описание |
+| Notebook | Open | Description |
 |---|---|---|
-| **Урок 9 · Лекция** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week5_rl_ga_ethics/Week5_Lesson9_Lecture.ipynb) | RL + GA + Ethics (8 типов проблем, 6 case studies) |
-| **ДЗ 1 · Теория** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week5_rl_ga_ethics/Week5_HW1_Theory.ipynb) | RL case study, GA fitness, эссе 200 слов по этике |
-| **Урок 10 · Семинар** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week5_rl_ga_ethics/Week5_Lesson10_Workshop.ipynb) | Mock Exam Section B + N-Queens GA + Q-learning GridWorld |
-| **ДЗ 2 · Capstone** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week5_rl_ga_ethics/Week5_HW2_Practice.ipynb) | Дизайн ML-системы для социальной проблемы (100 баллов) |
+| **Lesson 9 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week5_rl_ga_ethics/Week5_Lesson9_Lecture.ipynb) | RL + GA + Ethics (8 issue types, 6 case studies) |
+| **Lesson 10 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week5_rl_ga_ethics/Week5_Lesson10_Workshop.ipynb) | Mock exam practice + N-Queens GA + Q-learning GridWorld |
 
-### Неделя 6: [Final Mile — LLM, TOK, Regulations, Mock, Flashcards](./week6_final_mile/)
+### Week 6: [Final Mile - LLMs, Self-Assessment & Exam Prep](./week6_final_mile/)
 
-*Syllabus: `LLM`, `TOK`, `GDPR`, `AI Act`*
+*Syllabus: `LLM`, `TOK`, `GDPR / AI Act`*
 
-| Ноутбук | Открыть | Описание |
+| Notebook | Open | Description |
 |---|---|---|
-| **Урок 11 · Лекция** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week6_final_mile/Week6_Lesson11_Lecture_LLM.ipynb) | LLM/GenAI + TOK integration + GDPR/AI Act/regulations |
-| **Quiz · Самопроверка** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week6_final_mile/Week6_Quiz_Battery.ipynb) | 50 multiple-choice вопросов с авто-проверкой (Section A практика) |
-| **Mock · Экзамен** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week6_final_mile/Week6_Mock_Paper1.ipynb) | Полный 2-часовой Paper 1 (Section A + B) + markscheme |
-| **Flashcards · Повторение** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week6_final_mile/Week6_Flashcards.ipynb) | 108 интерактивных карточек + day-before-exam checklist |
+| **Lesson 11 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week6_final_mile/Week6_Lesson11_Lecture_LLM.ipynb) | LLMs / Generative AI + TOK integration + GDPR / AI Act |
+| **Quiz - Self-Assessment** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week6_final_mile/Week6_Quiz_Battery.ipynb) | 50 multiple-choice questions with auto-grading (exam-style practice) |
+| **Flashcards - Revision** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week6_final_mile/Week6_Flashcards.ipynb) | 108 interactive flashcards + day-before-exam checklist |
 
-### 🎁 [Bonus — Kaggle Competition + Class Debate Kit](./bonus/)
+### 🎁 [Bonus - Kaggle Competition + Class Debate Kit](./bonus/)
 
-| Ноутбук | Открыть | Описание |
+| Notebook | Open | Description |
 |---|---|---|
-| **Kaggle Quest** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/bonus/Bonus_Kaggle_Competition_Journey.ipynb) | 6-недельный геймифицированный трек: от первого submission до class leaderboard |
-| **Debate Kit** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/bonus/Bonus_Class_Debate_Kit.ipynb) | 8 готовых дебатов с аргументами, кейсами, killer questions, scoring rubric |
+| **Kaggle Quest** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/bonus/Bonus_Kaggle_Competition_Journey.ipynb) | 6-week gamified track: from first submission to class leaderboard |
+| **Debate Kit** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/bonus/Bonus_Class_Debate_Kit.ipynb) | 8 ready-to-run debates with arguments, real cases, scoring rubric |
 
-## 🗂 Структура репозитория
+## 🛠 Requirements
 
-```
-ib-cs-ml-course/
-├── week1_fundamentals/
-│   ├── Week1_Lesson1_Lecture.ipynb
-│   ├── Week1_HW1_Theory.ipynb
-│   ├── Week1_Lesson2_Workshop.ipynb
-│   ├── Week1_HW2_Practice.ipynb
-│   └── README.md
-├── week2_supervised/
-│   ├── Week2_Lesson3_Lecture.ipynb
-│   ├── Week2_HW1_Theory.ipynb
-│   ├── Week2_Lesson4_Workshop.ipynb
-│   ├── Week2_HW2_Practice.ipynb
-│   └── README.md
-├── week3_unsupervised/
-│   ├── Week3_Lesson5_Lecture.ipynb
-│   ├── Week3_HW1_Theory.ipynb
-│   ├── Week3_Lesson6_Workshop.ipynb
-│   ├── Week3_HW2_Practice.ipynb
-│   └── README.md
-├── week4_neural_networks/
-│   ├── Week4_Lesson7_Lecture.ipynb
-│   ├── Week4_HW1_Theory.ipynb
-│   ├── Week4_Lesson8_Workshop.ipynb
-│   ├── Week4_HW2_Practice.ipynb
-│   └── README.md
-├── week5_rl_ga_ethics/
-│   ├── Week5_Lesson9_Lecture.ipynb
-│   ├── Week5_HW1_Theory.ipynb
-│   ├── Week5_Lesson10_Workshop.ipynb
-│   ├── Week5_HW2_Practice.ipynb
-│   └── README.md
-├── week6_final_mile/
-│   ├── Week6_Lesson11_Lecture_LLM.ipynb
-│   ├── Week6_Quiz_Battery.ipynb
-│   ├── Week6_Mock_Paper1.ipynb
-│   ├── Week6_Flashcards.ipynb
-│   └── README.md
-├── bonus/
-│   ├── Bonus_Kaggle_Competition_Journey.ipynb
-│   ├── Bonus_Class_Debate_Kit.ipynb
-│   └── README.md
-├── resources/
-└── README.md
-```
-
-## 🛠 Технические требования
-
-Все библиотеки предустановлены в Google Colab. Для локального запуска:
+All libraries are pre-installed in Google Colab. For local use:
 
 ```bash
 pip install numpy pandas matplotlib seaborn scikit-learn mlxtend tensorflow ipywidgets
 ```
 
-| Библиотека | Используется в |
-|---|---|
-| numpy, pandas, matplotlib, seaborn | все недели |
-| scikit-learn | недели 2-3 (supervised, clustering) |
-| mlxtend | неделя 3 (association rules) |
-| tensorflow / keras | неделя 4 (нейросети), bonus Kaggle |
-| ipywidgets | неделя 6 (quiz, flashcards) |
+## 📦 Sources
 
-## 📦 Источники
-
-Контент основан на двух официальных учебниках IB CS (2027):
-- Baumgarten, Ganea & Turland — *Computer Science for the IB Diploma* (Hodder/Hachette)
+Content is based on the two official IB CS textbooks (2027 syllabus):
+- Baumgarten, Ganea & Turland — *Computer Science for the IB Diploma* (Hodder)
 - MacKenty & Stephenson — *Computer Science* (Oxford 2025)
-
----
-
-> ⚙️ **Преподавателю:** перед публикацией запустите `python add_colab_badges.py` (укажите свой GitHub username) — это активирует все Colab-бейджи. См. инструкцию в скрипте.

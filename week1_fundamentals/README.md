@@ -1,6 +1,4 @@
-# Неделя 1: Основы ML, Hardware и очистка данных
-
-> ML Fundamentals, Hardware & Data Cleaning
+# Week 1: ML Fundamentals, Hardware & Data Cleaning
 
 ## 📋 Syllabus statements
 
@@ -8,27 +6,23 @@
 - **`A4.1.2`** — Describe hardware used in ML (CPU/GPU/TPU/etc.)
 - **`A4.2.1`** — Data cleaning (HL)
 
-## 🎯 Темы недели
+## 🎯 Topics
 
-Типы ML (supervised/unsupervised/RL/deep/transfer), процессоры (CPU/GPU/TPU/NPU/ASIC/FPGA), edge vs cloud, очистка данных
+Types of ML (supervised / unsupervised / reinforcement / deep / transfer learning), processors (CPU / GPU / TPU / NPU / ASIC / FPGA), edge vs cloud computing, data cleaning techniques.
 
-## 📓 Ноутбуки
+## 📓 Notebooks
 
-| # | Ноутбук | Открыть в Colab | Описание |
+| # | Notebook | Open in Colab | Description |
 |---|---|---|---|
-| 1 | **Урок 1 · Лекция** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_Lesson1_Lecture.ipynb) | Типы ML + Hardware: 6 типов процессоров, edge vs cloud, 5 сценариев применения |
-| 2 | **ДЗ 1 · Теория** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_HW1_Theory.ipynb) | Сопоставление парадигм ML, выбор hardware, worked example |
-| 3 | **Урок 2 · Семинар** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_Lesson2_Workshop.ipynb) | Полный pipeline очистки данных на 2 реальных датасетах |
-| 4 | **ДЗ 2 · Практика** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SlavaMarina/ib-cs-ml-course/blob/main/week1_fundamentals/Week1_HW2_Practice.ipynb) | Самостоятельная очистка грязного датасета + отчёт |
+| 1 | **Lesson 1 - Lecture** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week1_fundamentals/Week1_Lesson1_Lecture.ipynb) | Types of ML + Hardware: 6 processor types, edge vs cloud, 5 application scenarios |
+| 2 | **Lesson 2 - Workshop** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__GH_USER__/__REPO__/blob/main/week1_fundamentals/Week1_Lesson2_Workshop.ipynb) | Full data cleaning pipeline on two real datasets |
 
-## 📖 Рекомендованный порядок прохождения
+## 🧠 Key terms
 
-1. **Лекция** — разберите теорию в классе или самостоятельно
-2. **Теоретическое ДЗ** — закрепите концепции, потренируйте IB command terms
-3. **Семинар** — практика с кодом (Google Colab)
-4. **Практическое ДЗ** — самостоятельный проект недели
+Supervised learning, Unsupervised learning, Reinforcement learning, Deep learning, Transfer learning, GPU vs CPU vs TPU, Edge computing, Data cleaning, Outlier, Normalization.
 
-> ⏱ Ориентировочно: 2 урока по 2 часа + 4-5 часов ДЗ в неделю.
+> 📝 **Homework** for this week is released via Google Classroom on schedule.
+
 ---
 
-[⬅ Назад к главной](../README.md)
+[⬅ Back to home](../README.md)
