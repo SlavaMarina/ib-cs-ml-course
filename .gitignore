@@ -12,7 +12,7 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Student work (опционально — если ученики форкают и не хотят коммитить данные)
+# Student work (optional, for forked student copies that should not commit data)
 # *_solution.ipynb
 # submissions/
 
