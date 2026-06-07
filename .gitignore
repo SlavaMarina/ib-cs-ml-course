@@ -20,3 +20,4 @@ Thumbs.db
 *.csv.tmp
 .config/
 sample_data/
+.idea/
