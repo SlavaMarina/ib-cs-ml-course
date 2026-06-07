@@ -1,20 +1,19 @@
-# 📖 Glossary — Полный справочник терминов IB CS ML
+# 📖 Glossary — Complete IB CS ML Term Reference
 
-> 110+ ключевых терминов с определениями, примерами и common mistakes.
-> Источники: Baumgarten (Hodder 2024), MacKenty & Stephenson (Oxford 2025), новый IB syllabus 2027.
-
----
-
-## 🔤 Как пользоваться
-
-- **Алфавитный индекс** ниже — для быстрого поиска по латинскому/русскому
-- **По неделям/темам** — после индекса, удобно для повторения
-- Каждая запись: краткое **определение** + **пример** + **частая ошибка** + **см. также**
+> 110+ key terms with definitions, examples, and common mistakes.
+> Sources: Baumgarten (Hodder 2024), MacKenty & Stephenson (Oxford 2025), and the new IB syllabus for first exams in 2027.
 
 ---
 
-## 🔠 Алфавитный индекс
+## 🔤 How to use this glossary
 
+- Use the **alphabetical index** below for quick lookup.
+- Use the **week/topic sections** for revision after each lesson.
+- Each entry gives a short **definition**, an **example**, a **common mistake**, and useful **see also** links.
+
+---
+
+## 🔠 Alphabetical Index
 
 **A** · [Accountability](#accountability)  [Accuracy](#accuracy)  [Action](#action)  [Activation function](#activation-function)  [Agent](#agent)  [Algorithmic fairness](#algorithmic-fairness)  [Amazon AI recruiting (2018)](#amazon-ai-recruiting-2018)  [Apriori algorithm](#apriori-algorithm)  [ASIC](#asic)  [Association rule mining](#association-rule-mining)  [Attention](#attention)  
 **B** · [Backpropagation](#backpropagation)  [Bias](#bias)  [Bias (in ML)](#bias-in-ml)  
@@ -28,1359 +27,1339 @@
 **K** · [K-means](#k-means)  [Kernel (Filter)](#kernel-filter)  [KNN](#knn)  
 **L** · [Learning rate](#learning-rate)  [Lift](#lift)  [Linear regression](#linear-regression)  [LLM](#llm)  [Loss function](#loss-function)  
 **M** · [Max pooling](#max-pooling)  [Mean imputation](#mean-imputation)  [minPts](#minpts)  [Model selection](#model-selection)  [Mutation](#mutation)  
-**N** · [Netflix de-anonymization (2006)](#netflix-de-anonymization-2006)  [Normalization](#normalization)  [NPU](#npu)  
+**N** · [Netflix de-anonymisation (2006)](#netflix-de-anonymisation-2006)  [Normalisation](#normalisation)  [NPU](#npu)  
 **O** · [Outlier](#outlier)  [Overfitting](#overfitting)  
 **P** · [Perceptron](#perceptron)  [Policy](#policy)  [Pooling layer](#pooling-layer)  [Population](#population)  [Precision](#precision)  [Privacy](#privacy)  [Prompt engineering](#prompt-engineering)  [Pruning](#pruning)  
 **Q** · [Q-learning](#q-learning)  
 **R** · [RAG](#rag)  [Recall](#recall)  [Reinforcement learning](#reinforcement-learning)  [ReLU](#relu)  [Reward](#reward)  [Right to explanation](#right-to-explanation)  [R² (R-squared)](#r2-r-squared)  
 **S** · [Sigmoid](#sigmoid)  [Silhouette score](#silhouette-score)  [Slope](#slope)  [Softmax](#softmax)  [Spatial hierarchies](#spatial-hierarchies)  [Spectral clustering](#spectral-clustering)  [State](#state)  [Supervised learning](#supervised-learning)  [Support](#support)  
-**T** · [TOK (Theory of Knowledge)](#tok-theory-of-knowledge)  [Tokenization](#tokenization)  [TPU](#tpu)  [Transfer learning](#transfer-learning)  [Transformer](#transformer)  [Transparency](#transparency)  
+**T** · [TOK (Theory of Knowledge)](#tok-theory-of-knowledge)  [Tokenisation](#tokenisation)  [TPU](#tpu)  [Transfer learning](#transfer-learning)  [Transformer](#transformer)  [Transparency](#transparency)  
 **U** · [Unsupervised learning](#unsupervised-learning)  
 **W** · [Weight](#weight)  [Wrapper method](#wrapper-method)  
 
 ---
 
-## 📚 По неделям курса
-
+## 📚 By Course Week
 
 ### Week 1: Fundamentals
 
 #### Supervised learning
 <small>📌 `A4.1.1`</small>
 
-> ML парадигма, в которой модель обучается на размеченных данных (input-output пары) для предсказания output на новых input.
+> An ML paradigm where a model is trained on labelled data, usually input-output pairs, so it can predict outputs for new inputs.
 
-**💡 Пример:** Email spam classifier — обучается на парах (email, spam/not-spam) и классифицирует новые email  
-**⚠️ Common mistake:** Часто путают с unsupervised на классических примерах  
-**🔗 См. также:** Unsupervised learning, Classification, Regression
+**💡 Example:** An email spam classifier learns from pairs such as `(email, spam/not spam)` and classifies new emails.  
+**⚠️ Common mistake:** Confusing it with unsupervised learning in classic scenario questions.  
+**🔗 See also:** Unsupervised learning, Classification, Regression
 
 ---
 
 #### Unsupervised learning
 <small>📌 `A4.1.1`</small>
 
-> ML парадигма для поиска паттернов в неразмеченных данных — кластеризация, ассоциативные правила.
+> An ML paradigm for finding patterns in unlabelled data, such as clusters or association rules.
 
-**💡 Пример:** Market segmentation — группировка клиентов без заранее известных категорий  
-**⚠️ Common mistake:** Думают, что нужны хоть какие-то метки  
-**🔗 См. также:** Supervised learning, Clustering, Association rules
+**💡 Example:** Market segmentation groups customers without being given the customer categories in advance.  
+**⚠️ Common mistake:** Thinking the algorithm needs at least some labels.  
+**🔗 See also:** Supervised learning, Clustering, Association rules
 
 ---
 
 #### Reinforcement learning
 <small>📌 `A4.1.1 / A4.3.6`</small>
 
-> ML парадигма, где агент учится через взаимодействие со средой, получая награды/штрафы, цель — максимизировать cumulative reward.
+> An ML paradigm where an agent learns by interacting with an environment, receiving rewards or penalties, and trying to maximise cumulative reward.
 
-**💡 Пример:** AlphaGo учится играть в Go, получая +1 за победу и -1 за проигрыш  
-**⚠️ Common mistake:** Путают с GA (RL — один агент; GA — популяция)  
-**🔗 См. также:** Agent, Reward, Q-learning
+**💡 Example:** AlphaGo improves by playing Go and receiving a positive result for winning and a negative result for losing.  
+**⚠️ Common mistake:** Mixing it up with genetic algorithms: RL usually has one learning agent; GA evolves a population.  
+**🔗 See also:** Agent, Reward, Q-learning
 
 ---
 
 #### Deep learning
 <small>📌 `A4.1.1`</small>
 
-> Подмножество ML, использующее глубокие нейронные сети (много hidden layers), которые автоматически учат иерархические представления.
+> A subset of ML that uses deep neural networks with multiple hidden layers to learn hierarchical representations automatically.
 
-**💡 Пример:** CNN для распознавания лиц — каждый слой учится на всё более сложных признаках  
-**⚠️ Common mistake:** Не любая нейросеть = deep learning; нужно минимум 2-3 hidden layers  
-**🔗 См. также:** ANN, CNN, Hidden layer
+**💡 Example:** In a CNN for face recognition, early layers detect edges and later layers detect more complex facial features.  
+**⚠️ Common mistake:** Treating any neural network as deep learning; deep learning needs several layers.  
+**🔗 See also:** ANN, CNN, Hidden layer
 
 ---
 
 #### Transfer learning
 <small>📌 `A4.1.1`</small>
 
-> Техника переиспользования предобученной модели для новой, но связанной задачи — экономит время и данные.
+> Reusing a pre-trained model for a new but related task, saving training time and reducing the amount of data needed.
 
-**💡 Пример:** Взять ImageNet-pretrained ResNet → fine-tune на 1000 фото своих кошек  
-**⚠️ Common mistake:** Думают, что transfer learning = просто использовать готовую модель без дообучения  
-**🔗 См. также:** Fine-tuning, Pre-trained model
+**💡 Example:** Fine-tuning an ImageNet-pre-trained ResNet on 1000 photos of a new animal class.  
+**⚠️ Common mistake:** Thinking transfer learning is only using a ready-made model; it usually involves adaptation or fine-tuning.  
+**🔗 See also:** Fine-tuning, Pre-trained model
 
 ---
-
 
 ### Week 1: Hardware
 
 #### CPU
 <small>📌 `A4.1.2`</small>
 
-> Central Processing Unit — главный процессор компьютера. Несколько ядер, оптимизирован для последовательных задач.
+> Central Processing Unit: the main processor in a computer. It has a small number of flexible cores and is optimised for sequential tasks.
 
-**💡 Пример:** Intel Core i7, AMD Ryzen — у каждого 6-16 ядер  
-**⚠️ Common mistake:** Думают, что CPU нельзя использовать для ML — можно, но медленнее  
-**🔗 См. также:** GPU, TPU, Parallel processing
+**💡 Example:** Intel Core i7 and AMD Ryzen processors often have 6-16 general-purpose cores.  
+**⚠️ Common mistake:** Thinking CPUs cannot be used for ML. They can, but are slower for many parallel ML workloads.  
+**🔗 See also:** GPU, TPU, Parallel processing
 
 ---
 
 #### GPU
 <small>📌 `A4.1.2`</small>
 
-> Graphics Processing Unit — тысячи параллельных ядер, оптимизированных для matrix operations. Тренирует нейросети в 10-100× быстрее CPU.
+> Graphics Processing Unit: a processor with many parallel cores, well suited to matrix operations and neural network training.
 
-**💡 Пример:** NVIDIA RTX 4090, A100 — для тренировки нейросетей  
-**⚠️ Common mistake:** Думают, что GPU универсален — он плох для последовательных задач  
-**🔗 См. также:** CPU, TPU, CUDA
+**💡 Example:** NVIDIA RTX 4090 or A100 GPUs are used to train neural networks much faster than CPUs.  
+**⚠️ Common mistake:** Thinking a GPU is always better; it is poor for many sequential tasks.  
+**🔗 See also:** CPU, TPU, CUDA
 
 ---
 
 #### TPU
 <small>📌 `A4.1.2`</small>
 
-> Tensor Processing Unit — ASIC от Google, специально для TensorFlow операций (matrix multiplication).
+> Tensor Processing Unit: a Google ASIC designed for tensor operations such as matrix multiplication, especially in TensorFlow workloads.
 
-**💡 Пример:** Google использует TPU pods для тренировки GPT-уровня моделей  
-**⚠️ Common mistake:** Путают с GPU — TPU специфичнее, не для графики  
-**🔗 См. также:** GPU, ASIC, Google Cloud
+**💡 Example:** Google uses TPU pods for large-scale deep learning training.  
+**⚠️ Common mistake:** Confusing TPU with GPU. A TPU is more specialised and is not for graphics.  
+**🔗 See also:** GPU, ASIC, Google Cloud
 
 ---
 
 #### NPU
 <small>📌 `A4.1.2`</small>
 
-> Neural Processing Unit — чип, оптимизированный для inference ML моделей на edge устройствах (смартфоны, IoT).
+> Neural Processing Unit: a chip optimised for ML inference on edge devices such as phones, laptops, and IoT devices.
 
-**💡 Пример:** Apple Neural Engine в iPhone — обрабатывает Face ID и Siri локально  
-**⚠️ Common mistake:** Думают, что NPU = TPU. NPU для inference на edge, TPU для training в cloud.  
-**🔗 См. также:** Edge computing, Inference
+**💡 Example:** Apple Neural Engine processes Face ID and some Siri tasks locally on an iPhone.  
+**⚠️ Common mistake:** Treating NPU and TPU as the same thing. NPUs are mainly for edge inference; TPUs are mainly for large cloud workloads.  
+**🔗 See also:** Edge computing, Inference
 
 ---
 
 #### ASIC
 <small>📌 `A4.1.2`</small>
 
-> Application-Specific Integrated Circuit — чип, спроектированный под одну конкретную задачу. Максимальная эффективность.
+> Application-Specific Integrated Circuit: a chip designed for one specific task, giving very high efficiency.
 
-**💡 Пример:** Tesla FSD chip — ASIC для self-driving inference; Google TPU — ASIC для ML training  
-**⚠️ Common mistake:** Думают, что ASIC = универсальный чип. Наоборот — узкоспециализированный.  
-**🔗 См. также:** TPU, FPGA, NPU
+**💡 Example:** Tesla FSD chips are ASICs for self-driving inference; Google TPUs are ASICs for ML workloads.  
+**⚠️ Common mistake:** Calling an ASIC a general-purpose chip. It is the opposite: specialised.  
+**🔗 See also:** TPU, FPGA, NPU
 
 ---
 
 #### FPGA
 <small>📌 `A4.1.2`</small>
 
-> Field-Programmable Gate Array — перепрограммируемый чип. Гибкость между ASIC (заточен) и CPU (универсален).
+> Field-Programmable Gate Array: a reprogrammable chip, giving flexibility between fixed ASICs and general-purpose CPUs.
 
-**💡 Пример:** Microsoft Bing использует FPGA для search ranking  
-**⚠️ Common mistake:** Путают с ASIC — FPGA можно перепрограммировать, ASIC — нет  
-**🔗 См. также:** ASIC, Custom hardware
+**💡 Example:** Microsoft has used FPGAs to accelerate search ranking.  
+**⚠️ Common mistake:** Confusing FPGA with ASIC. An FPGA can be reprogrammed; an ASIC cannot.  
+**🔗 See also:** ASIC, Custom hardware
 
 ---
 
 #### Edge computing
 <small>📌 `A4.1.2`</small>
 
-> Запуск ML inference локально на устройстве (смартфон, IoT) вместо отправки в облако. Низкая latency, приватность, offline-работа.
+> Running ML inference locally on or near the device that produces the data, instead of sending everything to the cloud.
 
-**💡 Пример:** Smart doorbell распознаёт лица на устройстве, фото не уходят в Amazon  
-**⚠️ Common mistake:** Думают, что edge = только мобильные. Edge — это любое не-облачное устройство  
-**🔗 См. также:** Cloud computing, NPU, Inference
+**💡 Example:** A smart doorbell recognises faces on the device, so images do not need to leave the home.  
+**⚠️ Common mistake:** Thinking edge means only mobile phones. Any non-cloud device can be an edge device.  
+**🔗 See also:** Cloud computing, NPU, Inference
 
 ---
-
 
 ### Week 1: Preprocessing
 
 #### Data cleaning
 <small>📌 `A4.2.1`</small>
 
-> Процесс выявления и исправления (или удаления) повреждённых, неполных, дублирующихся или некорректных записей.
+> Finding and fixing, removing, or replacing corrupted, incomplete, duplicated, or invalid records.
 
-**💡 Пример:** Удаление дубликатов, заполнение missing values, нормализация форматов дат  
-**⚠️ Common mistake:** Думают, что cleaning = только удаление missing values  
-**🔗 См. также:** Missing values, Outlier, Normalization
+**💡 Example:** Removing duplicates, filling missing values, and standardising date formats.  
+**⚠️ Common mistake:** Thinking cleaning only means removing missing values.  
+**🔗 See also:** Missing values, Outlier, Normalisation
 
 ---
 
 #### Outlier
 <small>📌 `A4.2.1`</small>
 
-> Аномальное значение, сильно отличающееся от остальных данных. Может быть ошибкой ввода или важным сигналом.
+> An unusual value that is very different from most other data points. It may be an error or an important signal.
 
-**💡 Пример:** В датасете зарплат — значение 500K при средней 50K  
-**⚠️ Common mistake:** Всегда удаляют outliers — иногда они полезны (fraud detection)  
-**🔗 См. также:** IQR method, Z-score
+**💡 Example:** In a salary dataset, 500K when the average is 50K may be an outlier.  
+**⚠️ Common mistake:** Always deleting outliers; sometimes they matter, such as in fraud detection.  
+**🔗 See also:** IQR method, Z-score
 
 ---
 
 #### IQR method
 <small>📌 `A4.2.1`</small>
 
-> Метод обнаружения outliers через interquartile range. Outlier если значение вне [Q1 - 1.5·IQR, Q3 + 1.5·IQR].
+> A method for detecting outliers using the interquartile range. A value is an outlier if it is outside `[Q1 - 1.5·IQR, Q3 + 1.5·IQR]`.
 
-**💡 Пример:** В boxplot — точки за 'усами' и есть outliers по IQR методу  
-**⚠️ Common mistake:** Применяют IQR к данным с не-нормальным распределением (нужны другие методы)  
-**🔗 См. также:** Outlier, Z-score, Boxplot
+**💡 Example:** In a boxplot, points beyond the whiskers are often IQR outliers.  
+**⚠️ Common mistake:** Applying IQR blindly to all distributions; some data need different methods.  
+**🔗 See also:** Outlier, Z-score, Boxplot
 
 ---
 
 #### Mean imputation
 <small>📌 `A4.2.1`</small>
 
-> Замена missing values средним значением колонки. Простой, но может вносить bias.
+> Replacing missing values with the mean of the column. It is simple, but can introduce bias.
 
-**💡 Пример:** Если в колонке age 10% missing, заполняем средним возрастом 35  
-**⚠️ Common mistake:** Применяют к категориальным данным (нужно mode), не median при выбросах  
-**🔗 См. также:** Missing values, Median imputation
+**💡 Example:** If 10% of ages are missing, replace them with the mean age, such as 35.  
+**⚠️ Common mistake:** Using it for categorical data, or using the mean when the median would handle outliers better.  
+**🔗 See also:** Missing values, Median imputation
 
 ---
 
-#### Normalization
+#### Normalisation
 <small>📌 `A4.2.1`</small>
 
-> Приведение значений features к одной шкале. Критично для distance-based алгоритмов (KNN) и нейросетей.
+> Scaling features to a comparable range. This is important for distance-based algorithms such as KNN and for neural networks.
 
-**💡 Пример:** MinMaxScaler приводит к [0, 1]; StandardScaler — к mean=0, std=1  
-**⚠️ Common mistake:** Забывают нормализовать перед KNN — features с большим range доминируют distance  
-**🔗 См. также:** StandardScaler, MinMaxScaler, KNN
+**💡 Example:** MinMaxScaler maps values to `[0, 1]`; StandardScaler maps them to mean 0 and standard deviation 1.  
+**⚠️ Common mistake:** Forgetting to normalise before KNN, so large-range features dominate the distance.  
+**🔗 See also:** StandardScaler, MinMaxScaler, KNN
 
 ---
-
 
 ### Week 2: Preprocessing
 
 #### Feature selection
 <small>📌 `A4.2.2`</small>
 
-> Выбор только релевантных признаков для обучения. Улучшает точность, уменьшает overfitting, ускоряет обучение.
+> Choosing only the relevant features for training. It can improve accuracy, reduce overfitting, and speed up training.
 
-**💡 Пример:** Из 100 признаков выбрать 20 наиболее коррелированных с target  
-**⚠️ Common mistake:** Применяют feature selection после dimensionality reduction, нужно наоборот  
-**🔗 См. также:** Filter method, Wrapper method, Embedded method
+**💡 Example:** From 100 features, keep the 20 most strongly related to the target.  
+**⚠️ Common mistake:** Applying feature selection after dimensionality reduction; selection normally comes first.  
+**🔗 See also:** Filter method, Wrapper method, Embedded method
 
 ---
 
 #### Filter method
 <small>📌 `A4.2.2`</small>
 
-> Feature selection через статистические метрики (Pearson r, Chi-square). Быстро, но не учитывает взаимодействия фич.
+> Feature selection using statistical measures such as Pearson correlation or chi-square. It is fast, but ignores feature interactions.
 
-**💡 Пример:** Pearson correlation: оставляем только фичи с |r| > 0.3 относительно target  
-**⚠️ Common mistake:** Думают, что filter method учитывает взаимодействия — нет, только независимый rank  
-**🔗 См. также:** Wrapper method, Embedded method
+**💡 Example:** Keep features with `|r| > 0.3` against the target.  
+**⚠️ Common mistake:** Thinking a filter method understands interactions; it ranks features independently.  
+**🔗 See also:** Wrapper method, Embedded method
 
 ---
 
 #### Wrapper method
 <small>📌 `A4.2.2`</small>
 
-> Feature selection через многократное обучение модели на разных подмножествах фич. Точнее, но медленнее.
+> Feature selection by repeatedly training a model on different feature subsets. It is often more accurate, but slower.
 
-**💡 Пример:** Recursive Feature Elimination (RFE) — итеративно удаляет наименее важные фичи  
-**⚠️ Common mistake:** Используют на больших датасетах — медленно из-за многократного обучения  
-**🔗 См. также:** Filter method, Embedded method
+**💡 Example:** Recursive Feature Elimination (RFE) removes the least useful features step by step.  
+**⚠️ Common mistake:** Using it on very large datasets without considering the training cost.  
+**🔗 See also:** Filter method, Embedded method
 
 ---
 
 #### Embedded method
 <small>📌 `A4.2.2`</small>
 
-> Feature selection встроен в обучение модели (например, регуляризация Lasso, tree importance).
+> Feature selection built into model training, such as Lasso regularisation or tree-based feature importance.
 
-**💡 Пример:** Random Forest feature_importances_ — автоматически даёт ранг важности фич  
-**⚠️ Common mistake:** Думают, что embedded = wrapper. Embedded — внутри модели, wrapper — снаружи.  
-**🔗 См. также:** Lasso, Random Forest, Filter method
+**💡 Example:** Random Forest `feature_importances_` gives a ranking of useful features.  
+**⚠️ Common mistake:** Mixing embedded and wrapper methods. Embedded selection happens inside the model.  
+**🔗 See also:** Lasso, Random Forest, Filter method
 
 ---
 
 #### Dimensionality reduction
 <small>📌 `A4.2.3`</small>
 
-> Уменьшение числа признаков с сохранением максимума информации. Борьба с curse of dimensionality.
+> Reducing the number of features while keeping as much information as possible. It helps with the curse of dimensionality.
 
-**💡 Пример:** PCA трансформирует 100 коррелированных фич в 10 ортогональных компонент  
-**⚠️ Common mistake:** Путают с feature selection. Reduction создаёт новые фичи; selection выбирает из существующих.  
-**🔗 См. также:** PCA, Feature selection, Curse of dimensionality
+**💡 Example:** PCA turns 100 correlated features into 10 orthogonal components.  
+**⚠️ Common mistake:** Confusing it with feature selection. Reduction creates new features; selection keeps existing ones.  
+**🔗 See also:** PCA, Feature selection, Curse of dimensionality
 
 ---
 
 #### Curse of dimensionality
 <small>📌 `A4.2.3`</small>
 
-> Проблема: с ростом числа измерений данные становятся разреженными, distance-based алгоритмы перестают работать.
+> As the number of dimensions grows, data becomes sparse and distance-based algorithms become less useful.
 
-**💡 Пример:** KNN на 1000 фичах работает плохо — все точки кажутся одинаково далёкими  
-**⚠️ Common mistake:** Думают, что больше фич = лучше. Часто хуже из-за curse.  
-**🔗 См. также:** KNN, Dimensionality reduction
+**💡 Example:** KNN often performs badly with 1000 features because all points can seem similarly far away.  
+**⚠️ Common mistake:** Assuming more features always help. They often hurt without selection or reduction.  
+**🔗 See also:** KNN, Dimensionality reduction
 
 ---
-
 
 ### Week 2: Algorithms
 
 #### Linear regression
 <small>📌 `A4.3.1`</small>
 
-> Supervised алгоритм для regression. Y = β₀ + β₁X + ε. Находит лучшую прямую для предсказания continuous output.
+> A supervised regression algorithm. `Y = β₀ + β₁X + ε`. It finds the best straight line for predicting a continuous output.
 
-**💡 Пример:** Прогноз цены дома по площади: цена = 30000 + 1500·площадь  
-**⚠️ Common mistake:** Применяют к classification (нужна logistic regression) или к нелинейным зависимостям  
-**🔗 См. также:** Slope, Intercept, R²
+**💡 Example:** Predicting house price from area: `price = 30000 + 1500·area`.  
+**⚠️ Common mistake:** Using it for classification or for strongly non-linear relationships.  
+**🔗 See also:** Slope, Intercept, R²
 
 ---
 
 #### Slope
 <small>📌 `A4.3.1`</small>
 
-> Коэффициент β₁ в Y = β₀ + β₁X. Показывает, насколько меняется Y при увеличении X на 1.
+> The coefficient `β₁` in `Y = β₀ + β₁X`. It shows how much `Y` changes when `X` increases by 1.
 
-**💡 Пример:** Если slope = 1500, то +1 м² → +1500$ к цене дома  
-**⚠️ Common mistake:** Путают slope и intercept. Slope = наклон, intercept = точка пересечения с осью Y.  
-**🔗 См. также:** Intercept, Linear regression
+**💡 Example:** If slope = 1500, then +1 square metre adds about $1500 to the predicted house price.  
+**⚠️ Common mistake:** Confusing slope and intercept. Slope is the rate of change; intercept is the value when `X = 0`.  
+**🔗 See also:** Intercept, Linear regression
 
 ---
 
 #### Intercept
 <small>📌 `A4.3.1`</small>
 
-> Коэффициент β₀ в Y = β₀ + β₁X. Значение Y при X = 0.
+> The coefficient `β₀` in `Y = β₀ + β₁X`. It is the predicted value of `Y` when `X = 0`.
 
-**💡 Пример:** Если intercept = 30000, дом площадью 0 м² 'стоил бы' 30000$ (теоретически)  
-**⚠️ Common mistake:** Интерпретируют intercept буквально, когда X = 0 не имеет смысла  
-**🔗 См. также:** Slope, Linear regression
+**💡 Example:** If intercept = 30000, a house with area 0 would theoretically be predicted at $30000.  
+**⚠️ Common mistake:** Interpreting the intercept literally when `X = 0` has no real meaning.  
+**🔗 See also:** Slope, Linear regression
 
 ---
 
 #### R² (R-squared)
 <small>📌 `A4.3.1`</small>
 
-> Coefficient of determination. R² = 1 - SS_res/SS_tot. Доля дисперсии Y, объяснённая моделью (0 = ничего, 1 = идеально).
+> Coefficient of determination. `R² = 1 - SS_res/SS_tot`. It is the proportion of variance in `Y` explained by the model.
 
-**💡 Пример:** R² = 0.85 → модель объясняет 85% вариации в данных  
-**⚠️ Common mistake:** R² > 0.95 — часто признак overfitting, а не идеальной модели  
-**🔗 См. также:** Linear regression, Overfitting
+**💡 Example:** `R² = 0.85` means the model explains about 85% of the variation in the data.  
+**⚠️ Common mistake:** Treating very high R² as always good; it can also be a sign of overfitting.  
+**🔗 See also:** Linear regression, Overfitting
 
 ---
 
 #### KNN
 <small>📌 `A4.3.2`</small>
 
-> K-Nearest Neighbours — classification/regression алгоритм. Предсказание = majority vote (или среднее) K ближайших соседей.
+> K-Nearest Neighbours: a classification or regression algorithm. Prediction is based on the majority vote or average of the K nearest labelled examples.
 
-**💡 Пример:** Классификация цветка ириса: смотрим 5 ближайших размеченных образцов  
-**⚠️ Common mistake:** Забывают нормализовать данные перед KNN  
-**🔗 См. также:** K (parameter), Euclidean distance, Normalization
+**💡 Example:** Classifying an iris flower by looking at the 5 nearest labelled flowers.  
+**⚠️ Common mistake:** Forgetting to normalise data before KNN.  
+**🔗 See also:** K (parameter), Euclidean distance, Normalisation
 
 ---
 
 #### Decision Tree
 <small>📌 `A4.3.2`</small>
 
-> Древовидная структура if-else правил. Каждый узел — вопрос о фиче, листья — предсказания.
+> A tree of if-else rules. Each internal node asks a feature question; each leaf gives a prediction.
 
-**💡 Пример:** Решение давать ли кредит: возраст > 25 → доход > 50K → дать  
-**⚠️ Common mistake:** Не контролируют max_depth → дерево запоминает train data (overfitting)  
-**🔗 См. также:** Gini impurity, Pruning, Random Forest
+**💡 Example:** Loan decision: age > 25, then income > 50K, then approve.  
+**⚠️ Common mistake:** Not controlling `max_depth`, so the tree memorises training data.  
+**🔗 See also:** Gini impurity, Pruning, Random Forest
 
 ---
 
 #### Gini impurity
 <small>📌 `A4.3.2`</small>
 
-> Метрика 'нечистоты' узла дерева. 0 = все одного класса; 0.5 = равная смесь. DT выбирает split, минимизирующий Gini.
+> A measure of how mixed a decision-tree node is. `0` means one pure class; higher values mean more mixed classes.
 
-**💡 Пример:** В узле с 80% класс А и 20% класс B: Gini = 1 - 0.8² - 0.2² = 0.32  
-**⚠️ Common mistake:** Путают с entropy (другая метрика, но похожая идея)  
-**🔗 См. также:** Decision Tree, Entropy
+**💡 Example:** A node with 80% class A and 20% class B has `Gini = 1 - 0.8² - 0.2² = 0.32`.  
+**⚠️ Common mistake:** Confusing it with entropy. They are different metrics with a similar purpose.  
+**🔗 See also:** Decision Tree, Entropy
 
 ---
 
 #### Pruning
 <small>📌 `A4.3.2`</small>
 
-> Обрезка ветвей Decision Tree для борьбы с overfitting.
+> Cutting branches from a decision tree to reduce overfitting.
 
-**💡 Пример:** После обучения удаляем ветви, которые незначительно улучшают accuracy  
-**⚠️ Common mistake:** Думают, что pruning только усложняет — наоборот, упрощает + улучшает generalization  
-**🔗 См. также:** Decision Tree, Overfitting, max_depth
+**💡 Example:** After training, remove branches that add little validation accuracy.  
+**⚠️ Common mistake:** Thinking pruning makes the model more complex; it usually simplifies it.  
+**🔗 See also:** Decision Tree, Overfitting, max_depth
 
 ---
-
 
 ### Week 2: Tuning
 
 #### Hyperparameter
 <small>📌 `A4.3.3`</small>
 
-> Значение, заданное ПЕРЕД обучением (не выучивается из данных). Определяет поведение алгоритма.
+> A value set before training that controls algorithm behaviour. It is not learned from the data.
 
-**💡 Пример:** K в KNN, max_depth в DT, learning_rate в нейросети  
-**⚠️ Common mistake:** Путают с parameters (weights). Hyperparameters задаются вами; parameters учит модель.  
-**🔗 См. также:** Grid search, Cross-validation
+**💡 Example:** `K` in KNN, `max_depth` in a decision tree, or `learning_rate` in a neural network.  
+**⚠️ Common mistake:** Confusing hyperparameters with parameters such as weights. You set hyperparameters; the model learns parameters.  
+**🔗 See also:** Grid search, Cross-validation
 
 ---
 
 #### Cross-validation
 <small>📌 `A4.3.3`</small>
 
-> Разбиение данных на K folds. Модель обучается K раз, каждый раз другой fold = test. Среднее даёт надёжную оценку.
+> Splitting data into K folds. The model trains K times, each time testing on a different fold, then averages the results.
 
-**💡 Пример:** 5-fold CV: данные → 5 частей → train на 4, test на 1, повторяем 5 раз, усредняем  
-**⚠️ Common mistake:** Делают CV только на training, не отделяют holdout test set  
-**🔗 См. также:** Hyperparameter, Holdout, Stratified
+**💡 Example:** In 5-fold CV, train on 4 parts and test on 1 part, repeating until each part has been the test fold.  
+**⚠️ Common mistake:** Using CV but never keeping a final holdout test set.  
+**🔗 See also:** Hyperparameter, Holdout, Stratified
 
 ---
-
 
 ### Week 2: Metrics
 
 #### Confusion matrix
 <small>📌 `A4.3.3`</small>
 
-> Таблица TP/FP/FN/TN для classification. Основа для всех метрик.
+> A table of true positives, false positives, false negatives, and true negatives for classification.
 
-**💡 Пример:** Spam filter: 80 TP / 10 FP / 20 FN / 90 TN на 200 emails  
-**⚠️ Common mistake:** Путают, где actual, а где predicted. Convention: rows = actual, cols = predicted.  
-**🔗 См. также:** Precision, Recall, F1
+**💡 Example:** A spam filter may have 80 TP, 10 FP, 20 FN, and 90 TN on 200 emails.  
+**⚠️ Common mistake:** Mixing up actual and predicted axes. A common convention is rows = actual, columns = predicted.  
+**🔗 See also:** Precision, Recall, F1
 
 ---
 
 #### Accuracy
 <small>📌 `A4.3.3`</small>
 
-> Доля правильных предсказаний. Accuracy = (TP + TN) / (TP + TN + FP + FN).
+> The proportion of correct predictions. `Accuracy = (TP + TN) / (TP + TN + FP + FN)`.
 
-**💡 Пример:** 180 правильных из 200 emails → accuracy = 90%  
-**⚠️ Common mistake:** Используют Accuracy при class imbalance — даёт ложное чувство хорошей модели  
-**🔗 См. также:** Precision, Recall, F1, Class imbalance
+**💡 Example:** 180 correct predictions out of 200 emails gives 90% accuracy.  
+**⚠️ Common mistake:** Using accuracy with class imbalance, where it can give a false sense of model quality.  
+**🔗 See also:** Precision, Recall, F1, Class imbalance
 
 ---
 
 #### Precision
 <small>📌 `A4.3.3`</small>
 
-> Из всех предсказанных positive, сколько действительно positive. P = TP / (TP + FP).
+> Of all predicted positive cases, how many are actually positive. `P = TP / (TP + FP)`.
 
-**💡 Пример:** 80 TP / 90 predicted positive → precision = 89%. Важно когда FP costly.  
-**⚠️ Common mistake:** Путают с Recall. Precision = качество positive предсказаний.  
-**🔗 См. также:** Recall, F1, False Positive
+**💡 Example:** 80 TP out of 90 predicted positives gives precision of 89%. It matters when false positives are costly.  
+**⚠️ Common mistake:** Confusing it with recall. Precision measures the quality of positive predictions.  
+**🔗 See also:** Recall, F1, False Positive
 
 ---
 
 #### Recall
 <small>📌 `A4.3.3`</small>
 
-> Из всех actual positive, сколько модель нашла. R = TP / (TP + FN).
+> Of all actual positive cases, how many the model found. `R = TP / (TP + FN)`.
 
-**💡 Пример:** Cancer screening: 95 actual cases, нашли 90 → recall = 95%. Важно когда FN costly.  
-**⚠️ Common mistake:** Путают с Precision. Recall = полнота, чтобы не упустить positive.  
-**🔗 См. также:** Precision, F1, False Negative
+**💡 Example:** In cancer screening, finding 90 out of 95 actual cases gives recall of about 95%.  
+**⚠️ Common mistake:** Confusing it with precision. Recall measures how complete the positive detection is.  
+**🔗 See also:** Precision, F1, False Negative
 
 ---
 
 #### F1 Score
 <small>📌 `A4.3.3`</small>
 
-> Harmonic mean of Precision and Recall. F1 = 2·P·R / (P + R). Используется при class imbalance.
+> The harmonic mean of precision and recall. `F1 = 2·P·R / (P + R)`. It is useful with class imbalance.
 
-**💡 Пример:** P = 0.89, R = 0.80 → F1 = 0.84  
-**⚠️ Common mistake:** Думают, что F1 = (P + R) / 2 — это arithmetic mean, не harmonic.  
-**🔗 См. также:** Precision, Recall, Class imbalance
+**💡 Example:** `P = 0.89`, `R = 0.80` gives `F1 ≈ 0.84`.  
+**⚠️ Common mistake:** Thinking F1 is the arithmetic mean `(P + R) / 2`; it is harmonic.  
+**🔗 See also:** Precision, Recall, Class imbalance
 
 ---
-
 
 ### Week 2: General
 
 #### Overfitting
 <small>📌 `A4.3.10`</small>
 
-> Модель запомнила детали training data, плохо обобщает на новые данные. Train accuracy >> test accuracy.
+> A model has memorised details of the training data and performs poorly on new data. Train accuracy is much higher than test accuracy.
 
-**💡 Пример:** DT с max_depth=None даёт 100% train accuracy, но 60% test  
-**⚠️ Common mistake:** Думают, что overfit видно только по low test accuracy. Признак — gap train vs test.  
-**🔗 См. также:** Underfitting, Cross-validation, Regularization
+**💡 Example:** A decision tree with `max_depth=None` gets 100% train accuracy but 60% test accuracy.  
+**⚠️ Common mistake:** Looking only at low test accuracy. The key sign is the gap between train and test performance.  
+**🔗 See also:** Underfitting, Cross-validation, Regularisation
 
 ---
-
 
 ### Week 3: Unsupervised
 
 #### Clustering
 <small>📌 `A4.3.4`</small>
 
-> Unsupervised техника: группировка точек так, чтобы внутри кластера были похожи, между кластерами — различны.
+> An unsupervised technique that groups points so items inside a cluster are similar and items in different clusters are different.
 
-**💡 Пример:** Сегментация клиентов: low-value / medium / high — без заранее заданных меток  
-**⚠️ Common mistake:** Применяют к labelled data — нужно classification, а не clustering  
-**🔗 См. также:** K-means, DBSCAN, Centroid
+**💡 Example:** Customer segmentation into low-value, medium-value, and high-value groups without predefined labels.  
+**⚠️ Common mistake:** Applying it to labelled prediction tasks; those need classification.  
+**🔗 See also:** K-means, DBSCAN, Centroid
 
 ---
 
 #### K-means
 <small>📌 `A4.3.4`</small>
 
-> Алгоритм кластеризации в 4 шага: 1) init K centroids 2) assign points to nearest 3) recalc centroids 4) repeat.
+> A clustering algorithm: initialise K centroids, assign points to the nearest centroid, recalculate centroids, and repeat.
 
-**💡 Пример:** K=3 для customer segmentation — сходится за 10-20 итераций  
-**⚠️ Common mistake:** Применяют к не-сферическим кластерам (нужен DBSCAN)  
-**🔗 См. также:** Centroid, Elbow method, DBSCAN
+**💡 Example:** `K = 3` for customer segmentation, often converging after 10-20 iterations.  
+**⚠️ Common mistake:** Applying it to non-spherical clusters, where DBSCAN may be better.  
+**🔗 See also:** Centroid, Elbow method, DBSCAN
 
 ---
 
 #### Centroid
 <small>📌 `A4.3.4`</small>
 
-> Центр кластера = среднее координат всех точек кластера. Используется в K-means.
+> The centre of a cluster, calculated as the mean coordinates of all points in the cluster. Used in K-means.
 
-**💡 Пример:** Кластер из точек (1,2), (3,4), (5,6) → centroid = (3, 4)  
-**⚠️ Common mistake:** Путают centroid и medoid. Centroid — среднее (может не быть точкой данных); medoid — реальная точка.  
-**🔗 См. также:** K-means, Cluster
+**💡 Example:** Points `(1,2)`, `(3,4)`, `(5,6)` have centroid `(3,4)`.  
+**⚠️ Common mistake:** Confusing centroid and medoid. A centroid is a mean; a medoid is a real data point.  
+**🔗 See also:** K-means, Cluster
 
 ---
 
 #### Elbow method
 <small>📌 `A4.3.4`</small>
 
-> Метод выбора K в K-means. Строим график inertia vs K, ищем 'локоть' (точку резкого замедления улучшения).
+> A method for choosing K in K-means by plotting inertia against K and looking for the point where improvement slows sharply.
 
-**💡 Пример:** Для retail data — локоть на K=4 → используем 4 кластера  
-**⚠️ Common mistake:** Думают, что есть один объективный K — часто elbow неоднозначен  
-**🔗 См. также:** K-means, Silhouette score
+**💡 Example:** In retail data, an elbow at `K = 4` suggests four clusters.  
+**⚠️ Common mistake:** Thinking there is always one objective K. The elbow can be ambiguous.  
+**🔗 See also:** K-means, Silhouette score
 
 ---
 
 #### Silhouette score
 <small>📌 `A4.3.4`</small>
 
-> Метрика качества кластеризации, от -1 до 1. Выше = кластеры более compact и separated.
+> A clustering quality metric from -1 to 1. Higher values mean clusters are more compact and better separated.
 
-**💡 Пример:** Silhouette = 0.7 → хорошее разделение; 0.3 → слабое; <0 → точка в чужом кластере  
-**⚠️ Common mistake:** Доверяют только Elbow — рекомендуется использовать Elbow + Silhouette вместе  
-**🔗 См. также:** K-means, Elbow method
+**💡 Example:** `0.7` is strong, `0.3` is weak, and a negative score suggests poor assignment.  
+**⚠️ Common mistake:** Trusting only the elbow method. Use elbow and silhouette together when possible.  
+**🔗 See also:** K-means, Elbow method
 
 ---
 
 #### DBSCAN
 <small>📌 `A4.3.4`</small>
 
-> Density-Based Spatial Clustering. Находит кластеры любой формы, не требует K, помечает outliers как noise.
+> Density-Based Spatial Clustering. It finds clusters of any shape, does not require K, and marks outliers as noise.
 
-**💡 Пример:** Кластеризация GPS точек на карте — находит формы дорог, не сферы  
-**⚠️ Common mistake:** Применяют к данным разной плотности (eps один для всех — может не работать)  
-**🔗 См. также:** Epsilon, minPts, K-means
+**💡 Example:** Clustering GPS points on a map can reveal road-shaped groups rather than spheres.  
+**⚠️ Common mistake:** Using it on data with very different densities, where one `eps` value may not work.  
+**🔗 See also:** Epsilon, minPts, K-means
 
 ---
 
 #### Epsilon (ε)
 <small>📌 `A4.3.4`</small>
 
-> Параметр DBSCAN: радиус для поиска соседей точки.
+> The DBSCAN radius used to search for a point's neighbours.
 
-**💡 Пример:** ε = 0.5 — точки в радиусе 0.5 единиц считаются 'соседями'  
-**⚠️ Common mistake:** Подбирают ε наугад. Стандартный метод — k-distance plot.  
-**🔗 См. также:** DBSCAN, minPts
+**💡 Example:** `ε = 0.5` means points within radius 0.5 count as neighbours.  
+**⚠️ Common mistake:** Choosing ε by guesswork. A k-distance plot is a better method.  
+**🔗 See also:** DBSCAN, minPts
 
 ---
 
 #### minPts
 <small>📌 `A4.3.4`</small>
 
-> Параметр DBSCAN: минимальное число соседей в радиусе ε для формирования core point.
+> The DBSCAN minimum number of neighbours inside radius ε needed to form a core point.
 
-**💡 Пример:** minPts = 5 — нужно ≥5 точек в окрестности, чтобы считать core  
-**⚠️ Common mistake:** Берут minPts = 2 — слишком мало, формируются 'шумные' кластеры  
-**🔗 См. также:** DBSCAN, Epsilon, Core point
+**💡 Example:** `minPts = 5` means at least 5 nearby points are needed for a core point.  
+**⚠️ Common mistake:** Choosing `minPts = 2`, which often creates noisy clusters.  
+**🔗 See also:** DBSCAN, Epsilon, Core point
 
 ---
 
 #### Hierarchical clustering
 <small>📌 `A4.3.4`</small>
 
-> Строит дерево (dendrogram) кластеров: agglomerative (bottom-up, merging) или divisive (top-down).
+> Clustering that builds a tree, or dendrogram, either bottom-up by merging clusters or top-down by splitting them.
 
-**💡 Пример:** Биологическая таксономия — иерархия видов  
-**⚠️ Common mistake:** Применяют к большим датасетам — O(n²) или O(n³) сложность  
-**🔗 См. также:** Dendrogram, K-means, Linkage
+**💡 Example:** Biological taxonomy is a hierarchy of related species.  
+**⚠️ Common mistake:** Using it on very large datasets without considering its high computational cost.  
+**🔗 See also:** Dendrogram, K-means, Linkage
 
 ---
 
 #### Dendrogram
 <small>📌 `A4.3.4`</small>
 
-> Древовидная диаграмма иерархической кластеризации. Срез на нужной высоте даёт нужное число кластеров.
+> A tree diagram for hierarchical clustering. Cutting the tree at a chosen height gives a chosen number of clusters.
 
-**💡 Пример:** Дерево языков — английский ближе к немецкому, чем к русскому  
-**⚠️ Common mistake:** Читают dendrogram неправильно — высота = dissimilarity, не порядок  
-**🔗 См. также:** Hierarchical clustering
+**💡 Example:** A language tree may show English closer to German than to Japanese.  
+**⚠️ Common mistake:** Reading the horizontal order as important. The height represents dissimilarity.  
+**🔗 See also:** Hierarchical clustering
 
 ---
 
 #### Spectral clustering
 <small>📌 `A4.3.4`</small>
 
-> Кластеризация на основе теории графов и eigenvectors матрицы similarity. Для non-linearly-separable данных.
+> Clustering based on graph theory and eigenvectors of a similarity matrix. Useful for non-linearly separable data.
 
-**💡 Пример:** Кластеризация социальной сети — людей с общими друзьями  
-**⚠️ Common mistake:** Математика вне scope IB — знать только название и применение  
-**🔗 См. также:** K-means, DBSCAN
+**💡 Example:** Clustering a social network by people who share many friends.  
+**⚠️ Common mistake:** Going too deep into the maths for IB; know the idea and use case.  
+**🔗 See also:** K-means, DBSCAN
 
 ---
 
 #### Association rule mining
 <small>📌 `A4.3.5`</small>
 
-> Поиск паттернов co-occurrence в transactional data. Например, market basket analysis.
+> Finding co-occurrence patterns in transactional data, often used in market basket analysis.
 
-**💡 Пример:** Купили пиво → 60% купят и чипсы (с lift = 2.5)  
-**⚠️ Common mistake:** Думают, что AR = причинно-следственная связь. Это только корреляция.  
-**🔗 См. также:** Apriori, Support, Confidence, Lift
+**💡 Example:** Customers who buy coffee may also buy biscuits, with `lift = 2.5`.  
+**⚠️ Common mistake:** Treating an association rule as causation. It is correlation, not proof of cause.  
+**🔗 See also:** Apriori, Support, Confidence, Lift
 
 ---
 
 #### Support
 <small>📌 `A4.3.5`</small>
 
-> Доля транзакций, содержащих набор товаров. Support({A,B}) = (трансакций с A и B) / (всего транзакций).
+> The proportion of transactions containing an itemset. `Support({A,B}) = transactions with A and B / all transactions`.
 
-**💡 Пример:** Из 1000 чеков 50 содержат {хлеб, молоко} → Support = 0.05  
-**⚠️ Common mistake:** Путают с probability — support не conditional  
-**🔗 См. также:** Confidence, Lift, Apriori
+**💡 Example:** If 50 of 1000 receipts contain `{bread, milk}`, support is 0.05.  
+**⚠️ Common mistake:** Treating support as conditional probability. It is not conditional.  
+**🔗 See also:** Confidence, Lift, Apriori
 
 ---
 
 #### Confidence
 <small>📌 `A4.3.5`</small>
 
-> Conditional probability: купили A → купят B. Confidence(A→B) = Support({A,B}) / Support({A}).
+> Conditional probability for a rule: if A is bought, B is also bought. `Confidence(A→B) = Support({A,B}) / Support({A})`.
 
-**💡 Пример:** Если 100 купили хлеб и 50 из них купили и молоко → Confidence(хлеб→молоко) = 0.5  
-**⚠️ Common mistake:** Высокая confidence — НЕ всегда полезное правило, нужно ещё lift > 1  
-**🔗 См. также:** Support, Lift, Apriori
+**💡 Example:** If 100 customers buy bread and 50 of them also buy milk, `Confidence(bread→milk) = 0.5`.  
+**⚠️ Common mistake:** Assuming high confidence always means a useful rule; check lift as well.  
+**🔗 See also:** Support, Lift, Apriori
 
 ---
 
 #### Lift
 <small>📌 `A4.3.5`</small>
 
-> Сила связи vs случайность. Lift(A→B) = Confidence(A→B) / Support({B}). Lift > 1 — связь, = 1 — независимость, < 1 — anti-correlation.
+> The strength of an association compared with random chance. `Lift(A→B) = Confidence(A→B) / Support({B})`.
 
-**💡 Пример:** Lift({подгузники → пиво}) = 3.0 — родители покупают пиво в 3× чаще обычного  
-**⚠️ Common mistake:** Думают, что lift = 1.1 — сильная связь. Обычно ищут lift ≥ 2.  
-**🔗 См. также:** Support, Confidence, Apriori
+**💡 Example:** `Lift(coffee→biscuits) = 3.0` means biscuits are bought three times more often with coffee than usual.  
+**⚠️ Common mistake:** Treating `lift = 1.1` as strong. Strong rules often need a higher lift, such as 2 or more.  
+**🔗 See also:** Support, Confidence, Apriori
 
 ---
 
 #### Apriori algorithm
 <small>📌 `A4.3.5`</small>
 
-> Алгоритм поиска frequent itemsets для association rules. 6 шагов: thresholds → candidates → frequent → higher-order → rules → pruning.
+> An algorithm for finding frequent itemsets and association rules: set thresholds, create candidates, keep frequent itemsets, build rules, and prune.
 
-**💡 Пример:** Market basket analysis у Walmart: Apriori нашёл правило про пиво/подгузники  
-**⚠️ Common mistake:** Думают, что Apriori = single-step. Это итеративный 6-шаговый процесс.  
-**🔗 См. также:** Support, Confidence, Lift
+**💡 Example:** Market basket analysis can use Apriori to find rules between products.  
+**⚠️ Common mistake:** Thinking Apriori is a single-step algorithm; it is iterative.  
+**🔗 See also:** Support, Confidence, Lift
 
 ---
-
 
 ### Week 3: Evaluation
 
 #### Model selection
 <small>📌 `A4.3.10`</small>
 
-> Выбор лучшего алгоритма + hyperparameters для задачи. 5 факторов: nature of problem, complexity, data, metrics, resources.
+> Choosing the best algorithm and hyperparameters for a task, based on problem type, complexity, data, metrics, and resources.
 
-**💡 Пример:** Кредитный скоринг: сравнили LR, DT, RF через CV → выбрали RF  
-**⚠️ Common mistake:** Выбирают модель по train accuracy — должны через cross-validation  
-**🔗 См. также:** Cross-validation, Hyperparameter, Overfitting
+**💡 Example:** For credit scoring, compare logistic regression, decision trees, and random forests with cross-validation.  
+**⚠️ Common mistake:** Choosing a model by training accuracy instead of validation or cross-validation performance.  
+**🔗 See also:** Cross-validation, Hyperparameter, Overfitting
 
 ---
-
 
 ### Week 4: ANN
 
 #### Perceptron
 <small>📌 `A4.3.8`</small>
 
-> Один искусственный нейрон. Принимает inputs, умножает на weights, складывает с bias, применяет activation function.
+> One artificial neuron. It takes inputs, multiplies them by weights, adds a bias, and applies an activation function.
 
-**💡 Пример:** y = ReLU(x₁·w₁ + x₂·w₂ + b)  
-**⚠️ Common mistake:** Думают, что perceptron = нейросеть. Perceptron — одна 'ячейка' сети.  
-**🔗 См. также:** ANN, Activation function, Weight
+**💡 Example:** `y = ReLU(x₁·w₁ + x₂·w₂ + b)`.  
+**⚠️ Common mistake:** Calling a perceptron a full neural network. It is one unit inside a network.  
+**🔗 See also:** ANN, Activation function, Weight
 
 ---
 
 #### Weight
 <small>📌 `A4.3.8`</small>
 
-> Параметр связи между нейронами, определяет важность сигнала. Учится через backpropagation.
+> A learned connection parameter between neurons that controls the importance of a signal.
 
-**💡 Пример:** Между input x и hidden neuron weight w = 0.7 → x умножается на 0.7  
-**⚠️ Common mistake:** Путают weight и bias. Weight — на input; bias — отдельная константа.  
-**🔗 См. также:** Bias, Backpropagation, Activation
+**💡 Example:** If input `x` connects to a hidden neuron with weight `w = 0.7`, the input is multiplied by 0.7.  
+**⚠️ Common mistake:** Confusing weight and bias. A weight is attached to an input; bias is an added constant.  
+**🔗 See also:** Bias, Backpropagation, Activation
 
 ---
 
 #### Bias
 <small>📌 `A4.3.8`</small>
 
-> Дополнительная константа, прибавляемая к weighted sum. Позволяет нейрону активироваться даже при нулевых inputs.
+> An extra constant added to the weighted sum, allowing a neuron to activate even when inputs are zero.
 
-**💡 Пример:** y = ReLU(w·x + b) — bias смещает activation function влево/вправо  
-**⚠️ Common mistake:** Путают с 'bias' в значении предвзятость (algorithmic bias) — это разные понятия!  
-**🔗 См. также:** Weight, Activation function
+**💡 Example:** In `y = ReLU(w·x + b)`, bias shifts the activation function left or right.  
+**⚠️ Common mistake:** Confusing neural-network bias with social or algorithmic bias. They are different ideas.  
+**🔗 See also:** Weight, Activation function
 
 ---
 
 #### Hidden layer
 <small>📌 `A4.3.8`</small>
 
-> Слой нейросети между input и output. Извлекает признаки. 'Hidden' = пользователь не видит его activations.
+> A neural-network layer between input and output. It extracts features; it is "hidden" because users do not directly see its activations.
 
-**💡 Пример:** ANN 784→128→64→10: два hidden layers (128 и 64 нейрона)  
-**⚠️ Common mistake:** Думают, что больше hidden layers всегда лучше — может быть overfitting.  
-**🔗 См. также:** Input layer, Output layer, Deep learning
+**💡 Example:** ANN `784→128→64→10` has two hidden layers: 128 and 64 neurons.  
+**⚠️ Common mistake:** Assuming more hidden layers always help; they can also cause overfitting.  
+**🔗 See also:** Input layer, Output layer, Deep learning
 
 ---
 
 #### Activation function
 <small>📌 `A4.3.8`</small>
 
-> Функция, применяемая к выходу нейрона. Вносит non-linearity, без неё сеть = линейная функция.
+> A function applied to a neuron's output. It adds non-linearity; without it, the whole network behaves like a linear function.
 
-**💡 Пример:** ReLU, Sigmoid, Tanh, Softmax — выбор зависит от слоя/задачи  
-**⚠️ Common mistake:** Используют Sigmoid в hidden layers — vanishing gradient проблема.  
-**🔗 См. также:** ReLU, Sigmoid, Softmax
+**💡 Example:** ReLU, sigmoid, tanh, and softmax are common activation functions.  
+**⚠️ Common mistake:** Using sigmoid in deep hidden layers, which can cause vanishing gradients.  
+**🔗 See also:** ReLU, Sigmoid, Softmax
 
 ---
 
 #### ReLU
 <small>📌 `A4.3.8`</small>
 
-> Rectified Linear Unit. ReLU(x) = max(0, x). Default activation для hidden layers — быстро вычисляется, нет vanishing gradient.
+> Rectified Linear Unit. `ReLU(x) = max(0, x)`. It is a common default activation for hidden layers.
 
-**💡 Пример:** Если weighted sum = -2 → ReLU выдаст 0; если +3 → выдаст 3  
-**⚠️ Common mistake:** Используют ReLU в output layer для binary classification (нужен Sigmoid)  
-**🔗 См. также:** Sigmoid, Softmax, Activation function
+**💡 Example:** If weighted sum is -2, ReLU returns 0; if it is +3, ReLU returns 3.  
+**⚠️ Common mistake:** Using ReLU in the output layer for binary classification, where sigmoid is usually needed.  
+**🔗 See also:** Sigmoid, Softmax, Activation function
 
 ---
 
 #### Sigmoid
 <small>📌 `A4.3.8`</small>
 
-> σ(x) = 1/(1 + e⁻ˣ). Output ∈ (0, 1). Используется в output binary classification как probability.
+> `σ(x) = 1/(1 + e⁻ˣ)`. The output is between 0 and 1, so it is useful for binary classification probabilities.
 
-**💡 Пример:** Output 0.85 = 85% вероятность positive класса  
-**⚠️ Common mistake:** Используют Sigmoid в deep hidden layers — vanishing gradient  
-**🔗 См. также:** ReLU, Softmax, Binary classification
+**💡 Example:** Output `0.85` means an estimated 85% probability for the positive class.  
+**⚠️ Common mistake:** Using sigmoid in deep hidden layers, where vanishing gradients can slow learning.  
+**🔗 See also:** ReLU, Softmax, Binary classification
 
 ---
 
 #### Softmax
 <small>📌 `A4.3.8`</small>
 
-> Преобразует logits в вероятности классов (sum = 1). Используется в output multi-class classification.
+> Converts logits into class probabilities that sum to 1. Used in multi-class classification output layers.
 
-**💡 Пример:** 10 MNIST классов: softmax выдаёт [0.02, 0.01, ..., 0.85, ..., 0.03]  
-**⚠️ Common mistake:** Используют Softmax для binary (можно — но проще Sigmoid с 1 нейроном)  
-**🔗 См. также:** Sigmoid, Multi-class, Cross-entropy
+**💡 Example:** For 10 MNIST classes, softmax may output `[0.02, 0.01, ..., 0.85, ..., 0.03]`.  
+**⚠️ Common mistake:** Using softmax for binary classification when sigmoid with one output neuron is simpler.  
+**🔗 See also:** Sigmoid, Multi-class, Cross-entropy
 
 ---
 
 #### Forward propagation
 <small>📌 `A4.3.8`</small>
 
-> Прохождение данных от input → hidden → output. На каждом узле: weighted sum + bias + activation.
+> Passing data from input to hidden layers to output. At each neuron: weighted sum, bias, activation.
 
-**💡 Пример:** MNIST image (28×28) → flatten → Dense(128) → Dense(10) → softmax  
-**⚠️ Common mistake:** Думают, что forward = обучение. Forward — только predict; обучение — backward.  
-**🔗 См. также:** Backpropagation, Activation, Loss
+**💡 Example:** MNIST image `(28×28)` → flatten → Dense(128) → Dense(10) → softmax.  
+**⚠️ Common mistake:** Thinking forward propagation is training. It is prediction; training also needs backpropagation.  
+**🔗 See also:** Backpropagation, Activation, Loss
 
 ---
 
 #### Backpropagation
 <small>📌 `A4.3.8`</small>
 
-> Алгоритм обучения ANN. После forward pass: вычисляем error, propagate назад, рассчитываем gradients, обновляем weights.
+> The ANN training algorithm: after a forward pass, calculate error, propagate it backward, calculate gradients, and update weights.
 
-**💡 Пример:** Loss = 0.8 → backprop вычисляет ∂Loss/∂w для каждого веса → SGD обновляет weights  
-**⚠️ Common mistake:** Объясняют математически на IB — нужна КОНЦЕПЦИЯ, а не chain rule  
-**🔗 См. также:** Forward propagation, Gradient descent, Loss function
+**💡 Example:** Loss = 0.8, so backpropagation calculates `∂Loss/∂w` for each weight and SGD updates the weights.  
+**⚠️ Common mistake:** Giving too much calculus in an IB answer; the concept matters more than the chain rule.  
+**🔗 See also:** Forward propagation, Gradient descent, Loss function
 
 ---
 
 #### Gradient descent
 <small>📌 `A4.3.8`</small>
 
-> Оптимизация: обновляем weights в направлении уменьшения loss. w_new = w_old - learning_rate · ∂L/∂w.
+> An optimisation method that updates weights in the direction that reduces loss: `w_new = w_old - learning_rate · ∂L/∂w`.
 
-**💡 Пример:** SGD (Stochastic Gradient Descent) — обновление по mini-batch  
-**⚠️ Common mistake:** Думают, что GD всегда находит global minimum — может застрять в local  
-**🔗 См. также:** Backpropagation, Learning rate, SGD
+**💡 Example:** Stochastic Gradient Descent updates weights using a mini-batch.  
+**⚠️ Common mistake:** Thinking gradient descent always finds the global minimum; it may get stuck in a local minimum.  
+**🔗 See also:** Backpropagation, Learning rate, SGD
 
 ---
 
 #### Learning rate
 <small>📌 `A4.3.8`</small>
 
-> Hyperparameter: насколько большие шаги делает gradient descent. Обычно 0.001 - 0.01.
+> A hyperparameter controlling the step size in gradient descent. Common values are around 0.001 to 0.01.
 
-**💡 Пример:** lr = 0.001 → маленькие шаги, медленно но стабильно; lr = 1.0 → расходится  
-**⚠️ Common mistake:** Большой LR ускоряет обучение — на деле может расходиться  
-**🔗 См. также:** Gradient descent, Hyperparameter
+**💡 Example:** `lr = 0.001` gives small, stable steps; `lr = 1.0` may diverge.  
+**⚠️ Common mistake:** Assuming a larger learning rate always trains faster. It can make training unstable.  
+**🔗 See also:** Gradient descent, Hyperparameter
 
 ---
 
 #### Epoch
 <small>📌 `A4.3.8`</small>
 
-> Один полный проход через весь training dataset (forward + backward + weight update).
+> One complete pass through the whole training dataset, including forward and backward passes and weight updates.
 
-**💡 Пример:** MNIST 60K samples, batch=64 → 938 batches за 1 epoch  
-**⚠️ Common mistake:** Путают epoch и iteration. Epoch = весь dataset; iteration = один batch.  
-**🔗 См. также:** Batch size, Training loop
+**💡 Example:** MNIST has 60K samples; with batch size 64, one epoch is about 938 batches.  
+**⚠️ Common mistake:** Confusing epoch and iteration. An epoch is the whole dataset; an iteration is one batch.  
+**🔗 See also:** Batch size, Training loop
 
 ---
 
 #### Loss function
 <small>📌 `A4.3.8`</small>
 
-> Функция, измеряющая отличие prediction от actual. Backprop минимизирует loss.
+> A function that measures how different a prediction is from the actual value. Backpropagation minimises loss.
 
-**💡 Пример:** MSE для regression; Cross-entropy для classification  
-**⚠️ Common mistake:** Используют MSE для classification — должно быть cross-entropy  
-**🔗 См. также:** Cross-entropy, MSE, Backpropagation
+**💡 Example:** Mean squared error for regression; cross-entropy for classification.  
+**⚠️ Common mistake:** Using MSE for classification when cross-entropy is usually the correct choice.  
+**🔗 See also:** Cross-entropy, MSE, Backpropagation
 
 ---
-
 
 ### Week 4: CNN
 
 #### CNN
 <small>📌 `A4.3.9`</small>
 
-> Convolutional Neural Network. Использует convolution + pooling для извлечения spatial features. Стандарт для images.
+> Convolutional Neural Network. It uses convolution and pooling to extract spatial features. It is standard for image tasks.
 
-**💡 Пример:** MNIST digit classification, ImageNet, face recognition  
-**⚠️ Common mistake:** Используют ANN на изображениях — теряется spatial structure  
-**🔗 См. также:** Convolutional layer, Kernel, Pooling
+**💡 Example:** MNIST digit classification, ImageNet classification, and face recognition.  
+**⚠️ Common mistake:** Using a plain ANN for images and losing spatial structure.  
+**🔗 See also:** Convolutional layer, Kernel, Pooling
 
 ---
 
 #### Convolutional layer
 <small>📌 `A4.3.9`</small>
 
-> Слой CNN, применяющий learnable kernels (filters) к input. Создаёт feature maps.
+> A CNN layer that applies learnable kernels, or filters, to the input and creates feature maps.
 
-**💡 Пример:** Conv2D(32, (3,3)) — 32 фильтра размером 3×3  
-**⚠️ Common mistake:** Думают, что kernels заранее заданы. Они учатся через backprop.  
-**🔗 См. также:** Kernel, Feature map, CNN
+**💡 Example:** `Conv2D(32, (3,3))` uses 32 filters of size `3×3`.  
+**⚠️ Common mistake:** Thinking kernels are fixed by the programmer. They are learned through backpropagation.  
+**🔗 See also:** Kernel, Feature map, CNN
 
 ---
 
 #### Kernel (Filter)
 <small>📌 `A4.3.9`</small>
 
-> Маленькая матрица (3×3 или 5×5), скользящая по input. Каждый kernel детектирует свой признак (edge, texture).
+> A small matrix, often `3×3` or `5×5`, that slides over the input. Each kernel detects a feature such as an edge or texture.
 
-**💡 Пример:** Sobel kernel детектирует вертикальные края: [[1,0,-1],[2,0,-2],[1,0,-1]]  
-**⚠️ Common mistake:** Думают, что kernel один на сеть. Обычно 32-256 kernels per Conv layer.  
-**🔗 См. также:** Convolutional layer, Feature map
+**💡 Example:** A Sobel kernel can detect vertical edges: `[[1,0,-1],[2,0,-2],[1,0,-1]]`.  
+**⚠️ Common mistake:** Thinking there is only one kernel in a network; a convolutional layer often has many.  
+**🔗 See also:** Convolutional layer, Feature map
 
 ---
 
 #### Feature map
 <small>📌 `A4.3.9`</small>
 
-> Output convolution: 2D-карта, где каждый pixel показывает activation kernel в этой позиции.
+> The output of a convolution: a 2D map where each value shows how strongly a kernel activated at that position.
 
-**💡 Пример:** 10×10 input + 3×3 kernel (valid padding) → 8×8 feature map  
-**⚠️ Common mistake:** Путают feature map и kernel. Kernel — фильтр; feature map — результат применения.  
-**🔗 См. также:** Convolutional layer, Kernel
+**💡 Example:** A `10×10` input with a `3×3` kernel and valid padding produces an `8×8` feature map.  
+**⚠️ Common mistake:** Confusing feature map and kernel. The kernel is the filter; the feature map is the result.  
+**🔗 See also:** Convolutional layer, Kernel
 
 ---
 
 #### Pooling layer
 <small>📌 `A4.3.9`</small>
 
-> Уменьшает spatial dimensions feature map. Снижает вычислительную нагрузку + контролирует overfitting + translation invariance.
+> A layer that reduces the spatial dimensions of a feature map, reducing computation and helping control overfitting.
 
-**💡 Пример:** MaxPool 2×2: 28×28 → 14×14  
-**⚠️ Common mistake:** Применяют pooling к channels — pooling меняет height/width, не channels  
-**🔗 См. также:** Max pooling, Average pooling
+**💡 Example:** MaxPool `2×2` changes `28×28` to `14×14`.  
+**⚠️ Common mistake:** Applying pooling to channels; pooling normally changes height and width, not channels.  
+**🔗 See also:** Max pooling, Average pooling
 
 ---
 
 #### Max pooling
 <small>📌 `A4.3.9`</small>
 
-> Pooling берёт максимум из окна (например, 2×2). Сохраняет самые яркие признаки.
+> A pooling operation that takes the maximum value from a small window, such as `2×2`.
 
-**💡 Пример:** Окно [[1,3],[4,2]] → max pool = 4  
-**⚠️ Common mistake:** Думают, что max pooling = upsampling. Наоборот — downsampling.  
-**🔗 См. также:** Pooling layer, Average pooling
+**💡 Example:** Window `[[1,3],[4,2]]` gives max pool value `4`.  
+**⚠️ Common mistake:** Thinking max pooling is upsampling. It is downsampling.  
+**🔗 See also:** Pooling layer, Average pooling
 
 ---
 
 #### Fully connected layer
 <small>📌 `A4.3.9`</small>
 
-> Каждый нейрон связан со всеми activations предыдущего слоя. Обычно в конце CNN для классификации.
+> A layer where every neuron is connected to all activations from the previous layer. Often used near the end of a CNN.
 
-**💡 Пример:** После Conv/Pool блоков: Flatten → Dense(128) → Dense(10) → softmax  
-**⚠️ Common mistake:** Думают, что FC = только в ANN. CNN заканчиваются FC слоями для финальной classification.  
-**🔗 См. также:** Dense layer, CNN
+**💡 Example:** After convolution and pooling: Flatten → Dense(128) → Dense(10) → softmax.  
+**⚠️ Common mistake:** Thinking fully connected layers only exist in plain ANNs. CNNs often end with them.  
+**🔗 See also:** Dense layer, CNN
 
 ---
 
 #### Spatial hierarchies
 <small>📌 `A4.3.9`</small>
 
-> Способность CNN автоматически учить иерархические признаки: early layers → edges, mid → shapes, deep → objects.
+> The ability of CNNs to learn hierarchical spatial features: early layers detect edges, middle layers detect shapes, and deeper layers detect objects.
 
-**💡 Пример:** Cat detector: layer 1 — края, layer 5 — глаза/уши, layer 10 — целая морда  
-**⚠️ Common mistake:** Не упоминают точную формулировку 'spatial hierarchies' — маркер на полный балл в A4.3.9  
-**🔗 См. также:** CNN, Deep learning, Feature learning
+**💡 Example:** A cat detector may learn edges first, then eyes and ears, then the whole face.  
+**⚠️ Common mistake:** Not using the phrase "spatial hierarchies" in A4.3.9 answers. It is a strong exam signal.  
+**🔗 See also:** CNN, Deep learning, Feature learning
 
 ---
 
-
-### Week 4: Regularization
+### Week 4: Regularisation
 
 #### Dropout
 <small>📌 `A4.3.8`</small>
 
-> Regularization техника: случайно 'выключаем' часть нейронов во время обучения. Борьба с overfitting.
+> A regularisation technique that randomly switches off some neurons during training to reduce overfitting.
 
-**💡 Пример:** Dropout(0.3) — 30% нейронов случайно отключаются на каждом forward pass  
-**⚠️ Common mistake:** Применяют dropout на inference — он только для training  
-**🔗 См. также:** Overfitting, Regularization
+**💡 Example:** `Dropout(0.3)` disables 30% of neurons during each training forward pass.  
+**⚠️ Common mistake:** Applying dropout during inference; it is for training only.  
+**🔗 See also:** Overfitting, Regularisation
 
 ---
-
 
 ### Week 5: RL
 
 #### Agent
 <small>📌 `A4.3.6`</small>
 
-> Сущность, принимающая решения в RL. Действует в environment, наблюдает state, выбирает actions, получает rewards.
+> The decision-making entity in reinforcement learning. It acts in an environment, observes states, chooses actions, and receives rewards.
 
-**💡 Пример:** Robot vacuum, AlphaGo, autonomous car AI, trading bot  
-**⚠️ Common mistake:** Путают agent и model. Agent — система; model (Q-network) — её 'мозг'.  
-**🔗 См. также:** Environment, State, Action, Reward
+**💡 Example:** Robot vacuum, AlphaGo, autonomous car AI, or trading bot.  
+**⚠️ Common mistake:** Confusing agent and model. The agent is the whole system; the model may be its "brain".  
+**🔗 See also:** Environment, State, Action, Reward
 
 ---
 
 #### Environment
 <small>📌 `A4.3.6`</small>
 
-> Мир, в котором действует agent. Reagent на actions: даёт новый state и reward.
+> The world in which an agent acts. It responds to actions by giving a new state and a reward.
 
-**💡 Пример:** Для AlphaGo — доска Go; для автомобиля — дорожная сеть  
-**⚠️ Common mistake:** Думают, что environment всегда физический. Может быть виртуальным.  
-**🔗 См. также:** Agent, State, Action
+**💡 Example:** For AlphaGo, the Go board; for a car, the road network.  
+**⚠️ Common mistake:** Thinking the environment must be physical. It can be virtual.  
+**🔗 See also:** Agent, State, Action
 
 ---
 
 #### State
 <small>📌 `A4.3.6`</small>
 
-> Снимок environment в момент времени. То, что agent наблюдает для принятия решения.
+> A snapshot of the environment at a moment in time: what the agent observes before making a decision.
 
-**💡 Пример:** В Mario: позиция игрока, врагов, монеты, шкала жизней  
-**⚠️ Common mistake:** Думают, что state = всё про мир. Это только observable часть.  
-**🔗 См. также:** Agent, Environment, Action
+**💡 Example:** In a game, state may include player position, enemies, coins, and lives.  
+**⚠️ Common mistake:** Thinking state means the whole real world. It is usually only the observable part.  
+**🔗 See also:** Agent, Environment, Action
 
 ---
 
 #### Action
 <small>📌 `A4.3.6`</small>
 
-> Операция, которую agent может выполнить. Action space = все возможные actions.
+> An operation an agent can perform. The action space is the set of all possible actions.
 
-**💡 Пример:** В Mario: {left, right, jump, fire}; в trading: {buy, sell, hold}  
-**⚠️ Common mistake:** Думают, что action непрерывный. Может быть discrete (Mario) или continuous (руль).  
-**🔗 См. также:** Agent, Action space
+**💡 Example:** In a game: `{left, right, jump, fire}`; in trading: `{buy, sell, hold}`.  
+**⚠️ Common mistake:** Thinking actions must be continuous. They can be discrete or continuous.  
+**🔗 See also:** Agent, Action space
 
 ---
 
 #### Reward
 <small>📌 `A4.3.6`</small>
 
-> Сигнал обратной связи от environment. Положительный = хорошо, отрицательный = плохо. Цель = max cumulative reward.
+> Feedback from the environment. Positive is desirable, negative is undesirable, and the goal is to maximise cumulative reward.
 
-**💡 Пример:** +10 за монету, -100 за смерть, -0.1 за каждый шаг (поощряет короткие пути)  
-**⚠️ Common mistake:** Reward design плохой → 'reward hacking' (agent эксплойтит непреднамеренно)  
-**🔗 См. также:** Cumulative reward, Agent
+**💡 Example:** `+10` for a coin, `-100` for dying, `-0.1` for each step to encourage short paths.  
+**⚠️ Common mistake:** Poor reward design can cause reward hacking, where the agent exploits unintended behaviour.  
+**🔗 See also:** Cumulative reward, Agent
 
 ---
 
 #### Policy
 <small>📌 `A4.3.6`</small>
 
-> Стратегия agent: state → action. 'Если state X → делай action Y'. Стартует как random, обучается.
+> The agent's strategy: a mapping from state to action. It may start random and improve during learning.
 
-**💡 Пример:** Шахматный engine: 'если king атакован → защити или ходи им'  
-**⚠️ Common mistake:** Думают, что policy = одно правило. Это полная функция от state space.  
-**🔗 См. также:** Agent, State, Action, Q-learning
+**💡 Example:** A chess policy chooses a move based on the current board state.  
+**⚠️ Common mistake:** Thinking a policy is one rule. It is a full function over the state space.  
+**🔗 See also:** Agent, State, Action, Q-learning
 
 ---
 
 #### Q-learning
 <small>📌 `A4.3.6`</small>
 
-> RL алгоритм с Q-table[state][action] = expected reward. Update через Bellman equation.
+> An RL algorithm using a Q-table where `Q[state][action]` estimates expected reward, updated using the Bellman equation.
 
-**💡 Пример:** Frozen Lake: после многих эпизодов Q-table заполнится так, что agent дойдёт до цели  
-**⚠️ Common mistake:** Применяют tabular Q-learning к большим state spaces (нужен DQN)  
-**🔗 См. также:** Q-table, Bellman equation, DQN
+**💡 Example:** In Frozen Lake, after many episodes the Q-table guides the agent to the goal.  
+**⚠️ Common mistake:** Applying tabular Q-learning to huge state spaces, where methods like DQN are needed.  
+**🔗 See also:** Q-table, Bellman equation, DQN
 
 ---
 
 #### Cumulative reward
 <small>📌 `A4.3.6`</small>
 
-> Сумма всех rewards за эпизод. Цель RL = максимизировать. Часто discounted (γ) для приоритета immediate rewards.
+> The sum of all rewards in an episode. RL tries to maximise it, often using a discount factor for future rewards.
 
-**💡 Пример:** За 100-шаговую игру: cumulative reward = +500 (агент собрал монеты, дошёл до цели)  
-**⚠️ Common mistake:** Оптимизируют только immediate reward — нужен сumulative.  
-**🔗 См. также:** Reward, Discount factor
+**💡 Example:** In a 100-step game, cumulative reward might be +500 if the agent collects coins and reaches the goal.  
+**⚠️ Common mistake:** Optimising only immediate reward instead of cumulative reward.  
+**🔗 See also:** Reward, Discount factor
 
 ---
 
 #### Exploration vs exploitation
 <small>📌 `A4.3.6`</small>
 
-> Trade-off: пробовать новое (explore) vs использовать известное хорошее (exploit). Balance через epsilon-greedy.
+> The trade-off between trying new actions and using the best-known action. Epsilon-greedy is one way to balance it.
 
-**💡 Пример:** ε-greedy: с вероятностью 0.1 random action, с 0.9 — best known  
-**⚠️ Common mistake:** Думают, что exploit лучше exploration — без exploration agent застрянет в local optimum.  
-**🔗 См. также:** Epsilon-greedy, UCB, Q-learning
+**💡 Example:** ε-greedy may take a random action with probability 0.1 and the best-known action with probability 0.9.  
+**⚠️ Common mistake:** Thinking exploitation is always better; without exploration, the agent may get stuck.  
+**🔗 See also:** Epsilon-greedy, UCB, Q-learning
 
 ---
 
 #### Epsilon-greedy
 <small>📌 `A4.3.6`</small>
 
-> Стратегия balance exploration/exploitation. С вероятностью ε — random action, иначе — best known.
+> A strategy for balancing exploration and exploitation: with probability ε choose a random action, otherwise choose the best-known action.
 
-**💡 Пример:** Старт ε=1.0 (pure exploration), decay до 0.05 (pure exploitation)  
-**⚠️ Common mistake:** Используют постоянное ε — должно уменьшаться со временем (epsilon decay).  
-**🔗 См. также:** Exploration, Q-learning
+**💡 Example:** Start with `ε = 1.0` for exploration, then decay to `0.05` for mostly exploitation.  
+**⚠️ Common mistake:** Keeping ε constant forever; it often needs to decrease over time.  
+**🔗 See also:** Exploration, Q-learning
 
 ---
-
 
 ### Week 5: GA
 
 #### Genetic algorithm
 <small>📌 `A4.3.7`</small>
 
-> Evolutionary algorithm: популяция решений эволюционирует через generations. 6 шагов: init, fitness, select, crossover, mutate, replace.
+> An evolutionary algorithm where a population of candidate solutions evolves over generations through selection, crossover, mutation, and replacement.
 
-**💡 Пример:** TSP: 100 случайных маршрутов → 100 поколений → near-optimal solution  
-**⚠️ Common mistake:** Путают GA с RL. RL — один agent учится; GA — популяция эволюционирует.  
-**🔗 См. также:** Population, Fitness, Crossover, Mutation
+**💡 Example:** TSP: 100 random routes evolve over 100 generations towards a near-optimal route.  
+**⚠️ Common mistake:** Confusing GA with RL. RL learns through one agent; GA evolves a population.  
+**🔗 See also:** Population, Fitness, Crossover, Mutation
 
 ---
 
 #### Population
 <small>📌 `A4.3.7`</small>
 
-> Набор candidate solutions в GA. Эволюционирует через поколения.
+> A set of candidate solutions in a genetic algorithm. It evolves over generations.
 
-**💡 Пример:** TSP с 100 случайных маршрутов на старте  
-**⚠️ Common mistake:** Используют слишком маленькую population (10-20) — мало diversity  
-**🔗 См. также:** Genetic algorithm, Generation
+**💡 Example:** A TSP population may start with 100 random routes.  
+**⚠️ Common mistake:** Using a population that is too small, giving too little diversity.  
+**🔗 See also:** Genetic algorithm, Generation
 
 ---
 
 #### Fitness function
 <small>📌 `A4.3.7`</small>
 
-> Функция оценки 'хорошести' решения. Выше fitness = лучше решение.
+> A function that scores how good a candidate solution is. Higher fitness means a better solution.
 
-**💡 Пример:** TSP: fitness = 1/total_distance (короче = лучше)  
-**⚠️ Common mistake:** Думают, что fitness = loss. Fitness максимизируется, loss минимизируется.  
-**🔗 См. также:** Genetic algorithm, Selection
+**💡 Example:** For TSP, `fitness = 1 / total_distance`, so shorter routes have higher fitness.  
+**⚠️ Common mistake:** Treating fitness like loss. Fitness is maximised; loss is minimised.  
+**🔗 See also:** Genetic algorithm, Selection
 
 ---
 
 #### Crossover
 <small>📌 `A4.3.7`</small>
 
-> Комбинирование двух parent solutions для создания offspring. Передаёт удачные traits.
+> Combining two parent solutions to create offspring, passing useful traits from both parents.
 
-**💡 Пример:** Parent 1: [A,B,C,D,E], Parent 2: [C,A,E,D,B] → Child: [A,B,C,E,D]  
-**⚠️ Common mistake:** Думают, что crossover = просто copy от parent. Это смешивание частей обоих.  
-**🔗 См. также:** Genetic algorithm, Mutation
+**💡 Example:** Parent 1 `[A,B,C,D,E]` and Parent 2 `[C,A,E,D,B]` may produce Child `[A,B,C,E,D]`.  
+**⚠️ Common mistake:** Thinking crossover just copies one parent; it mixes information from both.  
+**🔗 See also:** Genetic algorithm, Mutation
 
 ---
 
 #### Mutation
 <small>📌 `A4.3.7`</small>
 
-> Случайные изменения в offspring. Поддерживает diversity, предотвращает local optima.
+> Random changes to offspring. Mutation maintains diversity and helps avoid local optima.
 
-**💡 Пример:** В route [A,B,C,D,E] swap двух городов → [A,D,C,B,E]  
-**⚠️ Common mistake:** Большой mutation rate (>20%) → random search, GA теряет смысл  
-**🔗 См. также:** Genetic algorithm, Crossover
+**💡 Example:** In route `[A,B,C,D,E]`, swap two cities to get `[A,D,C,B,E]`.  
+**⚠️ Common mistake:** Using a very high mutation rate, which turns the algorithm into random search.  
+**🔗 See also:** Genetic algorithm, Crossover
 
 ---
-
 
 ### Week 5: Ethics
 
 #### Accountability
 <small>📌 `A4.4.1`</small>
 
-> Кто несёт ответственность, когда AI ошибся? Developers, users, AI company, regulator?
+> Who is responsible when AI causes harm: developers, users, the company, or regulators?
 
-**💡 Пример:** Tesla 2018: pedestrian killed by autonomous Uber → kто виноват? Driver/Uber/city?  
-**⚠️ Common mistake:** Думают, что AI 'сам виноват'. AI — инструмент, accountability у людей.  
-**🔗 См. также:** Algorithmic fairness, Ethics, Liability
+**💡 Example:** If an autonomous vehicle causes a crash, responsibility may involve the driver, company, designers, and regulators.  
+**⚠️ Common mistake:** Saying "the AI is responsible". AI is a tool; accountability stays with people and organisations.  
+**🔗 See also:** Algorithmic fairness, Ethics, Liability
 
 ---
 
 #### Algorithmic fairness
 <small>📌 `A4.4.1`</small>
 
-> AI алгоритмы могут perpetuate biases → discriminatory outcomes в hiring, lending, justice.
+> The concern that AI systems can perpetuate bias and create discriminatory outcomes in hiring, lending, justice, and other areas.
 
-**💡 Пример:** COMPAS recidivism algorithm — high false-positive для black defendants  
-**⚠️ Common mistake:** Думают, что 'objective AI' = fair AI. Bias 'наследуется' из training data.  
-**🔗 См. также:** Bias, COMPAS, Accountability
+**💡 Example:** The COMPAS recidivism algorithm showed higher false-positive rates for Black defendants.  
+**⚠️ Common mistake:** Assuming "objective AI" means fair AI. Bias can be inherited from training data.  
+**🔗 See also:** Bias, COMPAS, Accountability
 
 ---
 
 #### Bias (in ML)
 <small>📌 `A4.4.1`</small>
 
-> AI наследует biases из training data → дискриминирующие outcomes. Different from statistical bias.
+> Social or data bias inherited by an AI system, which can lead to discriminatory outcomes. This is different from statistical bias.
 
-**💡 Пример:** Amazon AI recruiting 2018: discriminated against women (trained on male-dominated resumes)  
-**⚠️ Common mistake:** Путают technical bias (statistical) с social bias (discrimination).  
-**🔗 См. также:** Algorithmic fairness, Training data
+**💡 Example:** Amazon's 2018 recruiting tool discriminated against women after training on male-dominated CV data.  
+**⚠️ Common mistake:** Confusing technical bias with social bias.  
+**🔗 See also:** Algorithmic fairness, Training data
 
 ---
 
 #### Privacy
 <small>📌 `A4.4.1`</small>
 
-> ML алгоритмы требуют огромных данных, часто personal. Issue: consent, surveillance, profiling.
+> ML systems often need large amounts of personal data, raising issues of consent, surveillance, profiling, and re-identification.
 
-**💡 Пример:** Netflix 2006: 'anonymized' данные de-anonymized через сопоставление с IMDb  
-**⚠️ Common mistake:** Думают, что anonymization = privacy. Re-identification часто возможен.  
-**🔗 См. также:** Anonymization, Consent, GDPR
+**💡 Example:** In the Netflix Prize case, "anonymised" ratings could be matched with public IMDb profiles.  
+**⚠️ Common mistake:** Thinking anonymisation always guarantees privacy. Re-identification is often possible.  
+**🔗 See also:** Anonymisation, Consent, GDPR
 
 ---
 
 #### COMPAS
 <small>📌 `A4.4.1`</small>
 
-> US recidivism algorithm. ProPublica 2016: black defendants получали higher false-positive rate. Classic bias case.
+> A US recidivism algorithm. ProPublica reported in 2016 that it had higher false-positive rates for Black defendants.
 
-**💡 Пример:** Используется в Florida, Wisconsin судами для bail decisions  
-**⚠️ Common mistake:** Думают, что COMPAS — единственный пример. Множество подобных проблем (banking, hiring).  
-**🔗 См. также:** Algorithmic fairness, Bias, Accountability
+**💡 Example:** It has been used in some courts for bail and sentencing decisions.  
+**⚠️ Common mistake:** Treating COMPAS as the only bias example. Similar issues occur in banking, hiring, and healthcare.  
+**🔗 See also:** Algorithmic fairness, Bias, Accountability
 
 ---
 
 #### Amazon AI recruiting (2018)
 <small>📌 `A4.4.1`</small>
 
-> Amazon свернул AI recruiter в 2018 — discriminated against women. Обучен на 10 годах male-dominated резюме.
+> Amazon stopped using an AI recruiting tool in 2018 after it showed bias against women, caused by training on male-dominated CV data.
 
-**💡 Пример:** Алгоритм понижал резюме со словом 'women's' (e.g., 'women's chess club')  
-**⚠️ Common mistake:** Думают, что AI создал bias. Bias был в данных — AI его 'наследовал'.  
-**🔗 См. также:** Bias, Algorithmic fairness
+**💡 Example:** The system downgraded CVs containing terms such as "women's chess club".  
+**⚠️ Common mistake:** Saying the AI invented the bias. The bias came from the data and was amplified by the model.  
+**🔗 See also:** Bias, Algorithmic fairness
 
 ---
 
-#### Netflix de-anonymization (2006)
+#### Netflix de-anonymisation (2006)
 <small>📌 `A4.4.1`</small>
 
-> Netflix release 'anonymized' dataset of user ratings. UT Austin re-identified users by matching with IMDb.
+> Netflix released an "anonymised" dataset of user ratings. Researchers re-identified users by matching rating patterns with IMDb.
 
-**💡 Пример:** User X с уникальной комбинацией ratings → matched с public IMDb profile  
-**⚠️ Common mistake:** Думают, что privacy решает удаление имён. Re-identification возможен через unique patterns.  
-**🔗 См. также:** Privacy, Anonymization
+**💡 Example:** A unique rating pattern can reveal a public profile even when names are removed.  
+**⚠️ Common mistake:** Thinking privacy is solved by deleting names. Unique patterns can still identify people.  
+**🔗 See also:** Privacy, Anonymisation
 
 ---
 
 #### Informed consent
 <small>📌 `A4.4.1`</small>
 
-> User должен явно соглашаться на data collection AND понимать use. Required для medical, financial.
+> Users should clearly agree to data collection and understand how their data will be used, especially in medical and financial contexts.
 
-**💡 Пример:** GDPR Article 6: lawful basis для processing — consent один из 6  
-**⚠️ Common mistake:** 'Click to accept terms' = НЕ informed consent. Информированность требует понимания.  
-**🔗 См. также:** GDPR, Privacy, Data minimization
+**💡 Example:** Under GDPR Article 6, consent is one lawful basis for processing personal data.  
+**⚠️ Common mistake:** Treating "click to accept terms" as informed consent. Understanding matters.  
+**🔗 See also:** GDPR, Privacy, Data minimisation
 
 ---
 
 #### Transparency
 <small>📌 `A4.4.1`</small>
 
-> Видимость, как AI принимает решения. Особенно важно для high-stakes (medical, judicial, credit).
+> Openness about how an AI system makes decisions, especially in high-stakes areas such as medicine, justice, and credit.
 
-**💡 Пример:** EU AI Act требует transparency для high-risk AI systems  
-**⚠️ Common mistake:** Путают transparency и explainability. Transparency — открытость; explainability — интерпретируемость.  
-**🔗 См. также:** Explainability, GDPR Article 22
+**💡 Example:** The EU AI Act requires transparency duties for some AI systems.  
+**⚠️ Common mistake:** Confusing transparency and explainability. Transparency is openness; explainability is making decisions understandable.  
+**🔗 See also:** Explainability, GDPR Article 22
 
 ---
 
 #### Explainability
 <small>📌 `A4.4.1`</small>
 
-> Способность объяснить, ПОЧЕМУ модель сделала такое предсказание. Critical для black-box моделей.
+> The ability to explain why a model made a particular prediction. It is especially important for black-box models.
 
-**💡 Пример:** LIME, SHAP — техники explainable AI; объясняют решение конкретного предсказания  
-**⚠️ Common mistake:** Думают, что deep learning = всегда black box. Есть техники для interpretability.  
-**🔗 См. также:** Transparency, LIME, SHAP
+**💡 Example:** LIME and SHAP help explain individual predictions.  
+**⚠️ Common mistake:** Assuming all deep learning is impossible to interpret. Explainability methods exist.  
+**🔗 See also:** Transparency, LIME, SHAP
 
 ---
-
 
 ### Week 6: LLM
 
 #### LLM
 <small>📌 `Extended`</small>
 
-> Large Language Model — глубокая нейросеть (transformer), обучена на терабайтах текста для понимания/генерации языка.
+> Large Language Model: a deep neural network, usually transformer-based, trained on very large text datasets to understand and generate language.
 
-**💡 Пример:** GPT-4, Claude, Gemini, LLaMA — все LLMs  
-**⚠️ Common mistake:** Думают, что LLM = новая парадигма ML. Это вариант ANN (transformer).  
-**🔗 См. также:** Transformer, Attention, ANN
+**💡 Example:** GPT-4, Claude, Gemini, and LLaMA are all LLMs.  
+**⚠️ Common mistake:** Treating LLMs as a new ML paradigm. They are a type of ANN, usually based on transformers.  
+**🔗 See also:** Transformer, Attention, ANN
 
 ---
 
 #### Transformer
 <small>📌 `Extended`</small>
 
-> Архитектура нейросети, основанная на self-attention. Стандарт для LLMs с 2017 (paper 'Attention is All You Need').
+> A neural-network architecture based on self-attention. It became the standard architecture for LLMs after the 2017 paper "Attention Is All You Need".
 
-**💡 Пример:** GPT, BERT, T5 — все based on transformer  
-**⚠️ Common mistake:** Путают transformer и RNN. Transformer — новее, parallelizable.  
-**🔗 См. также:** Attention, LLM, Tokenization
+**💡 Example:** GPT, BERT, and T5 are transformer-based models.  
+**⚠️ Common mistake:** Confusing transformers with RNNs. Transformers are more parallelisable.  
+**🔗 See also:** Attention, LLM, Tokenisation
 
 ---
 
-#### Tokenization
+#### Tokenisation
 <small>📌 `Extended`</small>
 
-> Разбиение текста на tokens (≈ слова или sub-words). Первый шаг LLM pipeline.
+> Splitting text into tokens, which may be words, sub-words, or characters. It is an early step in the LLM pipeline.
 
-**💡 Пример:** 'Machine learning' → ['Mach', 'ine', ' learn', 'ing'] (4 tokens у GPT-tokenizer)  
-**⚠️ Common mistake:** Думают, что 1 token = 1 word. Tokens могут быть sub-words или characters.  
-**🔗 См. также:** LLM, Embeddings
+**💡 Example:** "Machine learning" may become tokens such as `["Mach", "ine", " learn", "ing"]`.  
+**⚠️ Common mistake:** Thinking one token always equals one word. Tokens can be smaller or larger.  
+**🔗 See also:** LLM, Embeddings
 
 ---
 
 #### Attention
 <small>📌 `Extended`</small>
 
-> Механизм, который определяет, какие tokens 'обращают внимание' друг на друга. Сердце transformer.
+> The mechanism that decides which tokens should attend to, or use information from, other tokens. It is central to transformers.
 
-**💡 Пример:** В предложении 'The cat sat on the mat' — attention связывает 'sat' с 'cat' и 'mat'  
-**⚠️ Common mistake:** Думают, что attention тратит память — да, O(n²) от длины контекста  
-**🔗 См. также:** Transformer, Self-attention
+**💡 Example:** In "The cat sat on the mat", attention can link "sat" to "cat" and "mat".  
+**⚠️ Common mistake:** Forgetting that attention has a memory cost, often `O(n²)` with sequence length.  
+**🔗 See also:** Transformer, Self-attention
 
 ---
 
 #### Hallucinations
 <small>📌 `Extended`</small>
 
-> LLM выдаёт confidently incorrect или fabricated info. Critical limitation.
+> Confidently incorrect or fabricated information produced by an LLM. This is a key limitation.
 
-**💡 Пример:** ChatGPT выдумывает несуществующие книги с реалистичными названиями  
-**⚠️ Common mistake:** Думают, что hallucinations = bugs. Это fundamental свойство next-token prediction.  
-**🔗 См. также:** RAG, LLM, Fine-tuning
+**💡 Example:** An LLM may invent book titles or citations that look realistic.  
+**⚠️ Common mistake:** Treating hallucinations as simple bugs. They are linked to next-token prediction and uncertainty.  
+**🔗 See also:** RAG, LLM, Fine-tuning
 
 ---
 
 #### RAG
 <small>📌 `Extended`</small>
 
-> Retrieval-Augmented Generation. Pattern: query → search retrieves docs → docs + query → LLM. Уменьшает hallucinations.
+> Retrieval-Augmented Generation: search retrieves relevant documents, then the documents and query are given to the LLM.
 
-**💡 Пример:** ChatGPT с web search = базовый RAG  
-**⚠️ Common mistake:** Путают RAG и fine-tuning. RAG даёт docs в context; fine-tuning меняет weights.  
-**🔗 См. также:** LLM, Fine-tuning, Hallucinations
+**💡 Example:** A chatbot with web search is a basic RAG-style system.  
+**⚠️ Common mistake:** Confusing RAG and fine-tuning. RAG adds context; fine-tuning changes weights.  
+**🔗 See also:** LLM, Fine-tuning, Hallucinations
 
 ---
 
 #### Prompt engineering
 <small>📌 `Extended`</small>
 
-> Подбор удачных prompts для готовой LLM. Не меняет модель, но влияет на output.
+> Designing effective prompts for an existing LLM. It changes the output without changing model weights.
 
-**💡 Пример:** Zero-shot, few-shot, chain-of-thought — стратегии prompting  
-**⚠️ Common mistake:** Думают, что prompt engineering = fine-tuning. Prompt engineering не меняет model.  
-**🔗 См. также:** LLM, Fine-tuning, Zero-shot
+**💡 Example:** Zero-shot, few-shot, and chain-of-thought prompting are prompt strategies.  
+**⚠️ Common mistake:** Calling prompt engineering fine-tuning. Prompting does not retrain the model.  
+**🔗 See also:** LLM, Fine-tuning, Zero-shot
 
 ---
 
 #### Fine-tuning
 <small>📌 `Extended`</small>
 
-> Дополнительное обучение pre-trained модели на specific domain. $1K-$10K, средняя сложность.
+> Additional training of a pre-trained model on a specific domain or task.
 
-**💡 Пример:** GPT-3.5 fine-tuned на медицинских документах → 'MedGPT'  
-**⚠️ Common mistake:** Путают с RAG. Fine-tuning меняет weights модели; RAG только добавляет контекст.  
-**🔗 См. также:** LLM, Transfer learning, RAG
+**💡 Example:** Fine-tuning a general LLM on medical documents to make it better at medical text tasks.  
+**⚠️ Common mistake:** Confusing it with RAG. Fine-tuning changes model weights; RAG adds retrieved context.  
+**🔗 See also:** LLM, Transfer learning, RAG
 
 ---
-
 
 ### Week 6: Regulations
 
 #### GDPR
 <small>📌 `Extended`</small>
 
-> General Data Protection Regulation (EU, 2018). Строгие правила обработки personal data. Штрафы до €20M или 4% оборота.
+> General Data Protection Regulation: EU law from 2018 with strict rules for processing personal data and large potential fines.
 
-**💡 Пример:** Meta получил €1.2 млрд штраф в 2023 за нарушение GDPR  
-**⚠️ Common mistake:** Думают, что GDPR только в EU. Применяется ко ВСЕМ компаниям, обрабатывающим данные жителей EU.  
-**🔗 См. также:** Right to explanation, Privacy, EU AI Act
+**💡 Example:** GDPR can apply to companies outside the EU if they process data about people in the EU.  
+**⚠️ Common mistake:** Thinking GDPR only matters for EU companies. It can apply much more widely.  
+**🔗 See also:** Right to explanation, Privacy, EU AI Act
 
 ---
 
 #### EU AI Act (2024)
 <small>📌 `Extended`</small>
 
-> Первый мировой закон об AI. Делит на 4 уровня риска: unacceptable / high / limited / minimal. Штрафы до €35M.
+> The EU's AI law. It groups AI systems by risk level: unacceptable, high, limited, and minimal risk.
 
-**💡 Пример:** Social scoring (China-style) — UNACCEPTABLE и запрещён в EU  
-**⚠️ Common mistake:** Думают, что AI Act только про high-risk. Все уровни регулируются по-разному.  
-**🔗 См. также:** GDPR, Algorithmic fairness
+**💡 Example:** Social scoring systems like state-level citizen scoring are treated as unacceptable risk in the EU.  
+**⚠️ Common mistake:** Thinking the AI Act only covers high-risk systems. Different risk levels have different rules.  
+**🔗 See also:** GDPR, Algorithmic fairness
 
 ---
 
 #### Right to explanation
 <small>📌 `Extended`</small>
 
-> GDPR Article 22: user имеет право на объяснение automated decisions.
+> Under GDPR-related automated decision rights, users may need a meaningful explanation of automated decisions that affect them.
 
-**💡 Пример:** Если AI отказал в кредите — банк ОБЯЗАН объяснить причину  
-**⚠️ Common mistake:** Думают, что 'AI решил' — достаточное объяснение. Нет, нужно reasoning.  
-**🔗 См. также:** GDPR, Explainability, Transparency
+**💡 Example:** If an automated system rejects a loan application, the bank may need to explain the reason.  
+**⚠️ Common mistake:** Saying "the AI decided" as if that is a sufficient explanation. It is not.  
+**🔗 See also:** GDPR, Explainability, Transparency
 
 ---
-
 
 ### Week 6: IB
 
 #### TOK (Theory of Knowledge)
 <small>📌 `Extended`</small>
 
-> Обязательный компонент IB. Философские вопросы о природе знания. На CS — встраивайте в Discuss ответы для бонусных баллов.
+> A required IB component about the nature of knowledge. In CS, TOK links can strengthen Discuss and Evaluate answers.
 
-**💡 Пример:** TOK question: 'Can AI truly know something or only process patterns?'  
-**⚠️ Common mistake:** Не используют TOK-связки в ответах — теряют 1-2 балла на extended responses.  
-**🔗 См. также:** IB, Discuss, Evaluate
+**💡 Example:** TOK question: "Can AI truly know something, or does it only process patterns?"  
+**⚠️ Common mistake:** Ignoring TOK links in extended responses and missing easy marks.  
+**🔗 See also:** IB, Discuss, Evaluate
 
 ---
 
+## 📝 Licence
 
-## 📝 Лицензия
+This glossary is part of the IB CS ML course. You may use it freely for revision and preparation.
 
-Этот глоссарий — часть курса IB CS ML. Свободно используйте для подготовки.
-
-**Источники:**
+**Sources:**
 - Baumgarten, P., Ganea, F., Turland, M. (2024). *Computer Science for the IB Diploma*. Hodder Education.
 - MacKenty, D., Stephenson, K. (2025). *Computer Science*. Oxford University Press.
 - IB Computer Science Subject Guide (first exams 2027).
